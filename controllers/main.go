@@ -9,5 +9,6 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
+	// index.html => LDT (Lembar Detail Teknisi)
 	c.TplName = "index.html"
 }
