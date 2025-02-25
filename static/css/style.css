@@ -1,0 +1,139 @@
+body {
+  overflow-x: hidden;
+}
+
+.custom-input {
+  margin-top: 0.5rem;
+  width: 100%;
+  border-width: 2px;
+  border-color: #CDD1D2;
+  border-radius: 0.125rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;  
+}
+
+.custom-input:focus {
+  border-color: #8FBD40;
+  outline: none;
+}
+
+/* mr-custom-input: mr stands for measurement result */
+.measurement-result > input,
+#material-unit-container input,
+.mr-custom-input {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;  
+}
+
+/* remove increment/decrement arrow on input tag */
+.measurement-result > input::-webkit-outer-spin-button,
+.measurement-result > input::-webkit-inner-spin-button,
+#material-unit-container input::-webkit-outer-spin-button,
+#material-unit-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.measurement-result > input[type=number], 
+#material-unit-container input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.measurement-result div, .measurement-result input,
+#material-unit-container div, #material-unit-container input,
+.custom-border {
+  border-width: 1px;
+  border-color: #000000;
+  text-align: center;
+}
+
+#engineer-signature-pad-1, #engineer-signature-pad-2,
+#customer-signature-pad-1, #customer-signature-pad-2 {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 16px;
+    font-weight: 800;
+  } 
+  h2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #content, #header, #footer {
+    padding: 30px;
+  }
+  .section {
+    padding-inline: 30px;
+  }
+  .measurement-result {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 18px;
+    font-weight: 800;
+  } 
+  h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  #content {
+    padding: 70px;
+  }
+  #header, #footer {
+    padding-inline: 70px;
+  }
+  .section {
+    padding-inline: 40px;
+  }
+  .measurement-result {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  h1 {
+    font-size: 20px;
+    font-weight: 800;
+  } 
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #content  {
+    padding: 80px 100px;
+  }
+  #header, #footer  {
+    padding: 50px 100px;
+  }
+  .section{
+    padding-inline: 50px;
+  }
+  .measurement-result {
+    font-size: 16px;
+  }
+}
