@@ -54,7 +54,7 @@ document.getElementById('add-new-material-panel').addEventListener('click', func
     materialPanel.appendChild(newRow);
 });
 
-// Delete the selected row (material/ panel)
+// Delete the selected row (material/ panel - unit/part number)
 function removeRow(element) {
     const row = element.parentElement.parentElement;
     row.remove();

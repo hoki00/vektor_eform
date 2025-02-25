@@ -33,18 +33,22 @@ body {
 .measurement-result > input::-webkit-outer-spin-button,
 .measurement-result > input::-webkit-inner-spin-button,
 #material-unit-container input::-webkit-outer-spin-button,
-#material-unit-container input::-webkit-inner-spin-button {
+#material-unit-container input::-webkit-inner-spin-button,
+#assignment-product-table input::-webkit-outer-spin-button,
+#assignment-product-table input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 .measurement-result > input[type=number], 
-#material-unit-container input[type=number] {
+#material-unit-container input[type=number],
+#assignment-product-table input[type=number] {
   -moz-appearance: textfield;
 }
 
 .measurement-result div, .measurement-result input,
 #material-unit-container div, #material-unit-container input,
+#assignment-product-table div, #assignment-product-table input,
 .custom-border {
   border-width: 1px;
   border-color: #000000;
