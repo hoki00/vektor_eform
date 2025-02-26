@@ -1,0 +1,246 @@
+<!doctype html>
+<html style="overflow-x: hidden !important;"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  </head>
+  <body>
+    <!-- header -->
+    {{ template "partials/header.tpl" . }}
+
+    <!-- content -->
+    <div id="content" class="bg-[#00ACBA]">
+      <!-- Engineer Assignment Form -->
+      <div id="engineer-assignmnet-form" class="bg-[#ffffff]">
+        <!-- First Section - Form Title -->
+        <div class="section pt-[40px] pb-[20px] border-b-1 border-blue-500">
+          <h1>ENGINEER ASSIGNMENT FORM <i>(FORM PENUGASAN TEKNISI)</i></h1>
+        </div>
+        <!-- Second Section -->
+        <div class="section pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+          <div class="grid grid-row gap-4">
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width">
+                <h3>Doc. No.</h3>
+                <input class="custom-input" type="text" placeholder="task number"/>
+              </div>
+              <div class="custom-input-width col-span-2">
+                <h3>Project</h3>
+                <input class="custom-input" type="number" placeholder="project name"/>
+              </div>
+              <div class="custom-input-width col-span-1 col-end-5">
+                <h3>Date</h3>
+                <input class="custom-input w-[240px]" type="date"/>
+              </div>
+            </div>
+  
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width col-span-2 col-start-1">
+                <h3>Customer Name</h3>
+                <input class="custom-input" type="text" placeholder="customer name"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>PIC Name</h3>
+                <input class="custom-input" type="text" placeholder="pic name"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>PIC Phone</h3>
+                <input class="custom-input" type="number" placeholder="pic phone"/>
+              </div>
+            </div>
+
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width col-span-2 col-start-1">
+                <h3>Address</h3>
+                <input class="custom-input" type="text" placeholder="customer address"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>PIC Email</h3>
+                <input class="custom-input" type="text" placeholder="pic email"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>PIC Mobile</h3>
+                <input class="custom-input" type="number" placeholder="pic mobile"/>
+              </div>
+            </div>
+
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width">
+                <h3>City</h3>
+                <input class="custom-input" type="text" placeholder="city"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>Provinces</h3>
+                <input class="custom-input" type="number" placeholder="province"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>Sales</h3>
+                <input class="custom-input" type="text" placeholder="sales"/>
+              </div>
+            </div>
+
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width col-span-2">
+                <h3>PO/SPK/Ticket</h3>
+                <input class="custom-input" type="text" placeholder="po/spk/ticket"/>
+              </div>
+              <div class="custom-input-width col-span-2">
+                <h3>SO No.</h3>
+                <input class="custom-input" type="text" placeholder="so number"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Section -->
+        <div class="section pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+          <div class="custom-input-row grid grid-cols-4 mb-2">
+            <div class="custom-input-width col-span-1">
+              <h3>Start Date</h3>
+              <input class="custom-input w-[240px]" type="date"/>
+            </div>
+            <div class="custom-input-width col-span-1">
+              <h3>End Date</h3>
+              <input class="custom-input w-[240px]" type="date"/>
+            </div>
+            <div class="custom-input-width col-span-4 col-start-1">
+              <h3>Engineer Name</h3>
+              <textarea class="custom-input" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+            </div>
+            <div class="custom-input-width col-span-4 col-start-1">
+              <h3>Job Detail <i>(Detail Pekerjaan)</i></h3>
+              <textarea class="custom-input" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+            </div>
+            <div class="custom-input-width col-span-4 col-start-1">
+              <h3>Problem Reported <i>(Masalah di laporkan)</i></h3>
+              <textarea class="custom-input" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+            </div>
+
+            <!-- Product Name -->
+            <div id="assignment-product-table" class="grid grid-cols-9 col-span-4 pb-7 relative">
+              <div class="col-span-2">Product Name</div>
+              <div class="col-span-2">Capacity</div>
+              <div class="col-span-2">Quantity</div>
+              <div class="col-span-2">Serial Number</div>
+              <div>Action</div>
+              <!-- first row -->
+              <div class="grid grid-cols-9 col-span-9 border-none">
+                <input class="col-span-2" type="text" name="productName1" id="productName1" placeholder="product name">
+                <input class="col-span-2" type="text" name="capacity1" id="capacity1" placeholder="capacity">
+                <input class="col-span-2" type="number" name="quantity1" id="quantity1" placeholder="quantity">
+                <input class="col-span-2" type="number" name="serialNumber1" id="serialNumber1" placeholder="unit">
+                <div class="flex justify-around px-2 items-center">
+                  <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                </div>
+              </div>
+              <!-- second row -->
+              <div class="grid grid-cols-9 col-span-9 border-none">
+                <input class="col-span-2" type="text" name="productName2" id="productName2" placeholder="product name">
+                <input class="col-span-2" type="text" name="capacity2" id="capacity2" placeholder="capacity">
+                <input class="col-span-2" type="number" name="quantity2" id="quantity2" placeholder="quantity">
+                <input class="col-span-2" type="number" name="serialNumber2" id="serialNumber2" placeholder="unit">
+                <div class="flex justify-around px-2 items-center">
+                  <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                </div>
+              </div>
+              <!-- add button -->
+              <button id="add-new-assignment-product" class="absolute bottom-0 left-0 bg-[#22bb33] px-2 pb-1 text-[#ffffff] rounded-b-lg">
+                Add Data +
+              </button>
+            </div>  
+
+            <div class="custom-input-width col-span-1">
+              <h3>Visit Date/Time</h3>
+              <input class="custom-input w-[240px]" type="datetime-local" placeholder="task number"/>
+            </div>
+            <div class="custom-input-width col-span-4 col-start-1">
+              <h3>Activities</h3>
+              <textarea class="custom-input" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2 mb-2">
+            <h3>Customer Satisfaction Survey <i>Survey kepuasan Pelanggan</i></h3>
+            <h3 class="pl-3">Choose the option that corresponds to your level of satisfaction with our services <i>(Pilih opsi yang sesuai dengan tingkat kepuasan Anda terhadap layanan kami)</i></h3>
+            <div class="custom-input-width col-span-4">
+              <div class="flex gap-4 justify-between">
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="SangatPuas" name="radio1" value="Sangat Puas" class="w-4 h-4">
+                  <label for="SangatPuas" class="cursor-pointer text-xs lg:text-base">Sangat Puas</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="Puas" name="radio1" value="Puas" class="w-4 h-4">
+                  <label for="Puas" class="cursor-pointer text-xs lg:text-base">Puas</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="KurangPuas" name="radio1" value="Kurang Puas" class="w-4 h-4">
+                  <label for="KurangPuas" class="cursor-pointer text-xs lg:text-base">Kurang Puas</label>
+                </div>
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="TidakPuas" name="radio1" value="Tidak Puas" class="w-4 h-4">
+                  <label for="TidakPuas" class="cursor-pointer text-xs lg:text-base">Tidak Puas</label>
+                </div>
+              </div>
+            </div>
+            <div class="custom-input-width col-span-4 col-start-1">
+              <h3>Customer Suggestion <i>(Saran Pelanggan)</i></h3>
+              <textarea class="custom-input" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+            </div>
+          </div>
+
+          <div id="signature-section" class="custom-border grid grid-cols-12">
+            <!-- Engineer Signature Panel -->
+            <div id="engineer-signature-column" class="col-span-6">
+              <h3 class="custom-border col-span-6 flex items-center pl-3 gap-1">PT. VEKTORDAYA MEKATRIKA</h3>
+              <div class="grid grid-cols-6">
+                <!-- First Signature Pad -->
+                <div class="relative col-span-3">
+                  <canvas id="engineer-signature-pad-1" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-engineer-signature-1" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+                <!-- Second Signature Pad -->
+                <div class="relative col-span-3">
+                  <canvas id="engineer-signature-pad-2" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-engineer-signature-2" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+              </div>
+              <div class="grid grid-cols-6">
+                <input type="text" placeholder="engineer name" class="custom-border mr-custom-input col-span-3">
+                <input type="text" placeholder="engineer name" class="custom-border mr-custom-input col-span-3">
+              </div>
+            </div>
+
+            <!-- Customer Signature Panel -->
+            <div id="customer-signature-column" class="col-span-6">
+              <h3 class="custom-border col-span-6 flex items-center pl-3 gap-1">CUSTOMER</h3>
+              <div class="grid grid-cols-6">
+                <!-- First Signature Pad -->
+                <div class="relative col-span-3">
+                  <canvas id="customer-signature-pad-1" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-customer-signature-1" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+                <!-- Second Signature Pad -->
+                <div class="relative col-span-3">
+                  <canvas id="customer-signature-pad-2" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-customer-signature-2" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+              </div>
+              <div class="grid grid-cols-6">
+                <input type="text" placeholder="customer name" class="custom-border mr-custom-input col-span-3">
+                <input type="text" placeholder="customer name" class="custom-border mr-custom-input col-span-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    {{ template "partials/footer.tpl" . }}
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/js/formTugas.js"></script>
+  </body>
+</html>

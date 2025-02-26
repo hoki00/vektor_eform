@@ -7,6 +7,6 @@ import (
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
-    beego.Router("form-tugas", &controllers.FormTugasController{})
+    beego.Router("/", &controllers.TechnicalController{})
+    beego.Router("assignment-form", &controllers.AssignmentFormController{})
 }
