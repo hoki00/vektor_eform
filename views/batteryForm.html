@@ -1,0 +1,266 @@
+<!doctype html>
+<html style="overflow-x: hidden !important;"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  </head>
+  <body>
+    <!-- header -->
+    {{ template "partials/header.tpl" . }}
+
+    <!-- content -->
+    <div id="content" class="bg-[#00ACBA]">
+      <div id="battery-checklist-form" class="bg-[#ffffff]">
+        <!-- First Section - Form Title -->
+        <div class="section pt-[40px] pb-[20px] border-b-1 border-blue-500">
+          <h1>BATTERY CHECKLIST FORM</h1>
+        </div>
+        <!-- Second Section -->
+        <div class="section pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+          <div class="grid grid-row gap-4">
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width">
+                <h3>Ref No</h3>
+                <input class="custom-input" type="text" placeholder="task number"/>
+              </div>
+              <div class="custom-input-width col-span-2">
+                <h3>Customer</h3>
+                <input class="custom-input" type="number" placeholder="customer name"/>
+              </div>
+              <div class="custom-input-width col-span-1 col-end-5">
+                <h3>Date</h3>
+                <input class="custom-input w-[240px]" type="date"/>
+              </div>
+            </div>
+  
+            <div class="custom-input-row grid grid-cols-2">
+              <div class="custom-input-width">
+                <h3>UPS Name</h3>
+                <input class="custom-input" type="text" placeholder="ups name"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>UPS SN</h3>
+                <input class="custom-input" type="text" placeholder="ups sn"/>
+              </div>
+            </div>
+
+            <!-- radio button -->
+            <div class="custom-input-row grid grid-cols-2 mb-2">
+              <!-- project -->
+              <div class="custom-input-width">
+                <div class="flex flex-col gap-2">
+                  <h3>Project</h3>
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="newInstallation" name="projectRadio" value="New Installation" class="w-4 h-4">
+                    <label for="newInstallation" class="cursor-pointer text-xs lg:text-base">New Installation</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="batteryReplacemennt" name="projectRadio" value="Battery Replacement" class="w-4 h-4">
+                    <label for="batteryReplacemennt" class="cursor-pointer text-xs lg:text-base">Battery Replacement</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="maintenance-assessment" name="projectRadio" value="Maintenance / Assessment" class="w-4 h-4">
+                    <label for="maintenance-assessment" class="cursor-pointer text-xs lg:text-base">Maintenance / Assessment</label>
+                  </div>
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="projectRadioOther" name="projectRadio" value="Other" class="w-4 h-4">
+                    <label for="projectRadioOther" class="cursor-pointer text-xs lg:text-base">Other:</label>
+                    <input class="border-b-1 px-1" type="text"/>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- battery type -->
+              <div class="custom-input-width">
+                <div class="flex flex-col gap-2">
+                  <h3>Battery Type</h3>
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="sla-vrla" name="batteryTypeRadio" value="SLA / VRLA" class="w-4 h-4">
+                    <label for="sla-vrla" class="cursor-pointer text-xs lg:text-base">SLA / VRLA</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="nicd" name="batteryTypeRadio" value="NiCd" class="w-4 h-4">
+                    <label for="nicd" class="cursor-pointer text-xs lg:text-base">NiCd</label>
+                  </div> 
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="batteryTypeRadioOther" name="batteryTypeRadio" value="Other" class="w-4 h-4">
+                    <label for="batteryTypeRadioOther" class="cursor-pointer text-xs lg:text-base">Other:</label>
+                    <input class="border-b-1 px-1" type="text"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="custom-input-row grid grid-cols-3">
+              <div class="custom-input-width">
+                <h3>Brand</h3>
+                <input class="custom-input" type="text" placeholder="brand"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>Model</h3>
+                <input class="custom-input" type="text" placeholder="model"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>Capacity</h3>
+                <input class="custom-input" type="number" placeholder="capacity"/>
+              </div>
+            </div>
+ 
+            <!-- Battery Configuration Section -->
+            <h3>Battery Configuration</h3>
+            <div class="custom-input-row grid grid-cols-3 col-start-1">
+              <div class="custom-input-width">
+                <h3>Battery Production Code</h3>
+                <input class="custom-input" type="text" placeholder="battery production code"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>Battery Installation Date</h3>
+                <input class="custom-input w-[240px]" type="date"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>Battery Replacement Suggest</h3>
+                <input class="custom-input w-[240px]" type="date"/>
+              </div>
+            </div>
+
+            <div class="custom-input-row grid grid-cols-3 col-start-1">
+              <div class="custom-input-width flex flex-col gap-3">
+                <h3>Total String</h3>
+                <div class="grid grid-cols-2 content-center gap-2">
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="totalString1" name="totalStringRadio" value="1" class="w-4 h-4">
+                    <label for="totalString1" class="cursor-pointer text-xs lg:text-base">1</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="totalString2" name="totalStringRadio" value="2" class="w-4 h-4">
+                    <label for="totalString2" class="cursor-pointer text-xs lg:text-base">2</label>
+                  </div>  
+                </div>
+              </div>
+
+              <div class="custom-input-width">
+                <h3>Block / String</h3>
+                <input class="custom-input" type="number" placeholder="0"/>
+              </div>
+
+              <div class="custom-input-width flex flex-col gap-3">
+                <h3>Configuration Type</h3>
+                <div class="grid grid-cols-2 content-center gap-2">
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="seperate" name="configurationTypeRadio" value="Seperate" class="w-4 h-4">
+                    <label for="seperate" class="cursor-pointer text-xs lg:text-base">Seperate</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center border-none">
+                    <input type="radio" id="common" name="configurationTypeRadio" value="Common" class="w-4 h-4">
+                    <label for="common" class="cursor-pointer text-xs lg:text-base">Common</label>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <!-- End of Battery Configuration Section -->
+          </div>
+        </div>
+
+
+
+        <!-- Third Section -->
+        <div class="section grid grid-cols-8 custom-input-row pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+        
+          <div id="battery-table-string-1" class="battery-testing-table grid col-span-4 grid-cols-4 col-start-1 pb-7 relative">
+            <h3 class="col-span-4">Floating / Discharge - String No.1</h3>
+            <div>Volt</div>
+            <div>mOHM</div>
+            <div>Pass/Fail</div>
+            <div>Action</div>
+            <!-- first row -->
+            <div class="grid grid-cols-4 col-span-4 border-none">
+              <input type="number" name="string1-volt1`" id="string1-volt1`" placeholder="0">
+              <input type="number" name="string1-mOHM1" id="string1-mOHM1" placeholder="0">
+              <select name="string1-status1" id="string1-status1">
+                <option value="pass">Pass</option>
+                <option value="fail">Fail</option>
+              </select>
+              <div class="flex justify-around px-2 items-center">
+                <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+              </div>
+            </div>
+            <!-- add button -->
+            <button id="add-new-battery-string-1" class="absolute bottom-0 left-0 bg-[#22bb33] px-2 pb-1 text-[#ffffff] rounded-b-lg">
+              Add Data +
+            </button>
+          </div>  
+          <div id="battery-table-string-2" class="battery-testing-table grid col-span-4 grid-cols-4 col-start-5 pb-7 relative">
+            <h3 class="col-span-4">Floating / Discharge - String No. 2</h3>
+            <div>Volt</div>
+            <div>mOHM</div>
+            <div>Pass/Fail</div>
+            <div>Action</div>
+            <!-- first row -->
+            <div class="grid grid-cols-4 col-span-4 border-none">
+              <input type="number" name="string2-volt1" id="string2-volt1" placeholder="0">
+              <input type="number" name="string2-mOHM1" id="string2-mOHM1" placeholder="0">
+              <select name="string2-status1" id="string2-status1">
+                <option value="pass">Pass</option>
+                <option value="fail">Fail</option>
+              </select>
+              <div class="flex justify-around px-2 items-center">
+                <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+              </div>
+            </div>
+            <!-- add button -->
+            <button id="add-new-battery-string-2" class="absolute bottom-0 left-0 bg-[#22bb33] px-2 pb-1 text-[#ffffff] rounded-b-lg">
+              Add Data +
+            </button>
+          </div>  
+
+          <!-- Note Section -->
+          <div class="custom-input-width col-span-8">
+            <h3>Note</h3>
+            <textarea class="custom-input" rows="4" placeholder="note..."></textarea>
+          </div>
+        </div>
+
+        <!-- Forth Section -->
+        <div class="section pt-4 pb-6 border-b-1 border-blue-500">
+          <div id="signature-section" class="border-none grid grid-cols-4">
+            <!-- Engineer Signature Panel -->
+            <div id="engineer-signature-column" class="custom-border col-span-1 grid-cols-1">
+              <h3 class="custom-border flex items-center pl-3 col-start-1">Engineer</h3>
+              <div class="grid col-start-1">
+                <div class="relative">
+                  <canvas id="engineer-signature-pad" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-engineer-signature" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+              </div>
+              <div class="grid col-start-1">
+                <input type="text" placeholder="engineer name" class="w-full px-3 py-1 custom-border">
+              </div>
+            </div>
+
+            <!-- Customer Signature Panel -->
+            <div id="customer-signature-column" class="custom-border col-span-2 grid-cols-2 col-start-4">
+              <h3 class="custom-border flex items-center pl-3 col-start-4">Customer</h3>
+              <div class="grid col-start-4">
+                <div class="relative">
+                  <canvas id="customer-signature-pad" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-customer-signature" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+              </div>
+              <div class="grid col-start-4">
+                <input type="text" placeholder="customer name" class="w-full px-3 py-1 custom-border">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    {{ template "partials/footer.tpl" . }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/js/batteryForm.js"></script>
+  </body>
+</html>
