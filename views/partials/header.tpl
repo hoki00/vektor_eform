@@ -6,8 +6,8 @@
       <div class="{{if eq .URL "/"}}active{{end}}"></div>
     </div>
     <div class="header-menu-item">
-      <a href="/form-tugas"><h2>Form Tugas</h2></a>
-      <div class="{{if eq .URL "/form-tugas"}}active{{end}}"></div>
+      <a href="/assignment-form"><h2>Form Tugas</h2></a>
+      <div class="{{if eq .URL "/assignment-form"}}active{{end}}"></div>
     </div>
     <div class="header-menu-item">
       <a href="#"><h2>Form Batt</h2></a>
@@ -42,8 +42,8 @@
           <div class="{{if eq .URL "/"}}active{{end}}"></div>
         </div>
         <div class="header-menu-item">
-          <a href="/form-tugas"><h2>Form Tugas</h2></a>
-          <div class="{{if eq .URL "/form-tugas"}}active{{end}}"></div>
+          <a href="/assignment-form"><h2>Form Tugas</h2></a>
+          <div class="{{if eq .URL "/assignment-form"}}active{{end}}"></div>
         </div>
         <div class="header-menu-item">
           <a href="#"><h2>Form Batt</h2></a>

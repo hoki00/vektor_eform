@@ -1,0 +1,573 @@
+<!doctype html>
+<html style="overflow-x: hidden !important;"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  </head>
+  <body>
+    <!-- header -->
+    {{ template "partials/header.tpl" . }}
+
+    <!-- content -->
+    <div id="content" class="bg-[#00ACBA]">
+      <!-- Technical Detail Form -->
+      <div id="technical-detail-form" class="bg-[#ffffff]">
+        <!-- First Section - Form Title -->
+        <div class="section pt-[40px] pb-[20px] border-b-1 border-blue-500">
+          <h1>TECHNICAL DETAIL FORM <i>(LEMBAR DETAIL TEKNIS)</i></h1>
+        </div>
+        <!-- Second Section -->
+        <div class="section pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+          <div class="grid grid-row gap-4">
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width">
+                <h3>Task No</h3>
+                <input class="custom-input" type="text" placeholder="task number"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>Report No</h3>
+                <input class="custom-input" type="number" placeholder="report number"/>
+              </div>
+              <div class="custom-input-width col-span-1 col-end-5">
+                <h3>Date/Time</h3>
+                <input class="custom-input w-[240px]" type="datetime-local" placeholder="task number"/>
+              </div>
+            </div>
+  
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width col-span-2 col-start-1">
+                <h3>Customer Name</h3>
+                <input class="custom-input" type="text" placeholder="customer name"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>Engineer Name</h3>
+                <input class="custom-input" type="text" placeholder="engineer name"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>PIC Name</h3>
+                <input class="custom-input" type="text" placeholder="pic name"/>
+              </div>
+            </div>
+
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width col-span-2 col-start-1">
+                <h3>Address</h3>
+                <input class="custom-input" type="text" placeholder="customer address"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>PIC</h3>
+                <input class="custom-input" type="text" placeholder="pic"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>PIC Phone</h3>
+                <input class="custom-input" type="number" placeholder="pic phone"/>
+              </div>
+            </div>
+            
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width col-span-3 col-start-1">
+                <h3>Product - Brand</h3>
+                <input class="custom-input" type="text" placeholder="product - brand"/>
+              </div>
+              <div class="custom-input-width">
+                <h3>Cap.</h3>
+                <input class="custom-input" type="text" placeholder="cap"/>
+              </div>
+            </div>
+            
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width col-span-4 col-start-1">
+                <h3>Serial No.</h3>
+                <input class="custom-input" type="text" placeholder="serial number"/>
+              </div>
+            </div>
+
+            <div class="custom-input-row grid grid-cols-4">
+              <div class="custom-input-width col-span-4 col-start-1">
+                <h3>Customer Complaint <i>(Keluhan Pelanggan)</i></h3>
+                <textarea class="custom-input" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Third Section -->
+        <div class="section pt-4 pb-6 pb-[60px]">
+          <div class="custom-input-row grid grid-cols-4 mb-4">
+            <div class="custom-input-width col-span-4 col-start-1">
+              <h3>Activities that are done <i>(Aktifitas yang Dilakukan)</i></h3>
+              <textarea class="custom-input" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+            </div>
+          </div>
+
+          <!-- Measurement Result -->
+          <div id="measurement-result-container" class="mb-6">
+            <h3 class="mb-2">Measurement Result <i>(Hasil Pengukuran)</i></h3>
+            <!-- <div id="measurement-result" class="grid grid-cols-13 border-1 text-center" style="width: 1140px;"> -->
+            <div class="measurement-result grid grid-cols-13 border-1 text-center w-full">
+              <div class="row-span-2 col-span-2 bg-[#7c7c7c]"></div>
+              <div class="col-span-7 col-start-3">Voltage</div>
+              <div class="col-span-4 col-start-10">Current</div>
+              <div>L1-L2</div>
+              <div>L2-L3</div>
+              <div>L3-L1</div>
+              <div>PE</div>
+              <div>L1</div>
+              <div>L2</div>
+              <div>L3</div>
+              <div>L1</div>
+              <div>L2</div>
+              <div>L3</div>
+              <div>N</div>
+              <div class="col-span-2" style="text-align: left; padding-left: 12px;">INPUT</div>
+              <input type="number" name="input1" id="input1">
+              <input type="number" name="input2" id="input2">
+              <input type="number" name="input3" id="input3">
+              <input type="number" name="input4" id="input4">
+              <input type="number" name="input5" id="input5">
+              <input type="number" name="input6" id="input6">
+              <input type="number" name="input7" id="input7">
+              <input type="number" name="input8" id="input8">
+              <input type="number" name="input9" id="input9">
+              <input type="number" name="input10" id="input10">
+              <input type="number" name="input11" id="input11">
+              
+              <div class="col-span-2" style="text-align: left; padding-left: 12px;">OUTPUT</div>
+              <input type="number" name="output1" id="output1">
+              <input type="number" name="output2" id="output2">
+              <input type="number" name="output3" id="output3">
+              <input type="number" name="output4" id="output4">
+              <input type="number" name="output5" id="output5">
+              <input type="number" name="output6" id="output6">
+              <input type="number" name="output7" id="output7">
+              <input type="number" name="output8" id="output8">
+              <input type="number" name="output9" id="output9">
+              <input type="number" name="output10" id="output10">
+              <input type="number" name="output11" id="output11">
+
+              <div class="row-span-2 col-span-2" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">LOAD</div>
+              <div>L1 %</div>
+              <div>L2 %</div>
+              <div>L3 %</div>
+              <div>L1 kVA</div>
+              <div>L2</div>
+              <div>L3 kVA</div>
+              <div>L1 kW</div>
+              <div>L2 kW</div>
+              <div>L3 kW</div>
+              <div class="col-span-2">Cos Q in - out</div>
+              <input type="number" name="load1" id="load1">
+              <input type="number" name="load2" id="load2">
+              <input type="number" name="load3" id="load3">
+              <input type="number" name="load4" id="load4">
+              <input type="number" name="load5" id="load5">
+              <input type="number" name="load6" id="load6">
+              <input type="number" name="load7" id="load7">
+              <input type="number" name="load8" id="load8">
+              <input type="number" name="load9" id="load9">
+              <input type="number" name="load10" id="load10">
+              <input type="number" name="load11" id="load11">
+              <div class="row-span-2 col-span-2" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">BATT. VOLTAGE</br>TEMP. / RH</div>
+              <input type="number" name="battVoltage1" id="battVoltage1">
+              <input type="number" name="battVoltage2" id="battVoltage2">
+              <div class="col-span-2">DC LINK VOLTAGE</div>
+              <input type="number" name="dcLinkVoltage1" id="dcLinkVoltage1">
+              <input type="number" name="dcLinkVoltage2" id="dcLinkVoltage2">
+              <div class="col-span-3 bg-[#d9d9d9]">CHARGE / DISCHG CURRENT</div>
+              <input type="number" name="chrgDschrg1" id="chrgDschrg1">
+              <input type="number" name="chrgDschrg2" id="chrgDschrg2">
+              <div>ROOM</div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="room1" id="room1">&deg;C
+              </div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="room2" id="room2">%
+              </div>
+              <div>UPS</div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="usp1" id="usp1">&deg;C
+              </div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="ups2" id="ups2">%
+              </div>
+              <input type="number" name="input7" id="input7">
+              <div class="col-span-2">BATTERY ROOM</div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="battRoom1" id="battRoom1">&deg;C
+              </div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="battRoom2" id="battRoom2">%
+              </div>
+              <div class="row-span-4 col-span-2" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">Simulation Test</div>
+              <div class="col-span-3">Mains Failure / Backup test</div>
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="pass" name="radio1" value="Pass" style="width: 16px; height:16px;">
+                <label for="pass">Pass</label>
+              </div>  
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0; border-left: 0;">
+                <input type="radio" id="fail" name="radio1" value="Fail" style="width: 16px; height:16px;">
+                <label for="fail">Fail</label>
+              </div>  
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-left: 0;">
+                <input type="radio" id="not" name="radio1" value="Not" style="width: 16px; height:16px;">
+                <label for="not">Not</label>
+              </div>
+              <input class="col-span-5" type="text" name="mainsFailureInput" id="mainsFailureInput">
+              <div class="col-span-3">By pass & return test</div>
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="pass" name="radio2" value="Pass" style="width: 16px; height:16px;">
+                <label for="pass">Pass</label>
+              </div>  
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0; border-left: 0;">
+                <input type="radio" id="fail" name="radio2" value="Fail" style="width: 16px; height:16px;">
+                <label for="fail">Fail</label>
+              </div>  
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-left: 0;">
+                <input type="radio" id="not" name="radio2" value="Not" style="width: 16px; height:16px;">
+                <label for="not">Not</label>
+              </div>
+              <input class="col-span-5" type="text" name="byPassInput" id="byPassInput">
+              <div class="col-span-3">Mains to restore test</div>
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="pass" name="radio3" value="Pass" style="width: 16px; height:16px;">
+                <label for="pass">Pass</label>
+              </div>  
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0; border-left: 0;">
+                <input type="radio" id="fail" name="radio3" value="Fail" style="width: 16px; height:16px;">
+                <label for="fail">Fail</label>
+              </div>  
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-left: 0;">
+                <input type="radio" id="not" name="radio3" value="Not" style="width: 16px; height:16px;">
+                <label for="not">Not</label>
+              </div>
+              <input class="col-span-5" type="text" name="mainsToRestoreInput" id="mainsToRestoreInput">
+              <div class="col-span-3">Option test</div>
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="pass" name="radio4" value="Pass" style="width: 16px; height:16px;">
+                <label for="pass">Pass</label>
+              </div>  
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0; border-left: 0;">
+                <input type="radio" id="fail" name="radio4" value="Fail" style="width: 16px; height:16px;">
+                <label for="fail">Fail</label>
+              </div>  
+              <div class="grid grid-cols-2 px-[12px] items-center" style="border-left: 0;">
+                <input type="radio" id="not" name="radio4" value="Not" style="width: 16px; height:16px;">
+                <label for="not">Not</label>
+              </div>
+              <input class="col-span-5" type="text" name="optionTestInput" id="optionTestInput">
+            </div>
+          </div>
+
+          <!-- Measurement Result - Tablet View -->
+          <div id="measurement-result-container-table-view" class="mb-6" style="display: none;">
+            <h3 class="mb-2">Measurement Result <i>(Hasil Pengukuran)</i></h3>
+            <div class="measurement-result grid grid-cols-9 border-1 text-center mb-2">
+              <div class="row-span-2 col-span-2 bg-[#7c7c7c]"></div>
+              <div class="col-span-7 col-start-3">Voltage</div>
+              <div>L1-L2</div>
+              <div>L2-L3</div>
+              <div>L3-L1</div>
+              <div>PE</div>
+              <div>L1</div>
+              <div>L2</div>
+              <div>L3</div>
+             
+              <div class="col-span-2" style="text-align: left; padding-left: 12px;">INPUT</div>
+              <input type="number" name="input1" id="input1">
+              <input type="number" name="input2" id="input2">
+              <input type="number" name="input3" id="input3">
+              <input type="number" name="input4" id="input4">
+              <input type="number" name="input5" id="input5">
+              <input type="number" name="input6" id="input6">
+              <input type="number" name="input7" id="input7">
+              
+              <div class="col-span-2" style="text-align: left; padding-left: 12px;">OUTPUT</div>
+              <input type="number" name="output1" id="output1">
+              <input type="number" name="output2" id="output2">
+              <input type="number" name="output3" id="output3">
+              <input type="number" name="output4" id="output4">
+              <input type="number" name="output5" id="output5">
+              <input type="number" name="output6" id="output6">
+              <input type="number" name="output7" id="output7">
+             
+
+              <div class="row-span-2 col-span-2" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">LOAD</div>
+              <div>L1 %</div>
+              <div>L2 %</div>
+              <div>L3 %</div>
+              <div>L1 kVA</div>
+              <div>L2</div>
+              <div>L3 kVA</div>
+              <div>L1 kW</div>
+             
+              <input type="number" name="load1" id="load1">
+              <input type="number" name="load2" id="load2">
+              <input type="number" name="load3" id="load3">
+              <input type="number" name="load4" id="load4">
+              <input type="number" name="load5" id="load5">
+              <input type="number" name="load6" id="load6">
+              <input type="number" name="load7" id="load7">
+            
+              <div class="row-span-2 col-span-2" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">BATT. VOLTAGE</br>TEMP. / RH</div>
+              <input type="number" name="battVoltage1" id="battVoltage1">
+              <input type="number" name="battVoltage2" id="battVoltage2">
+              <div class="bg-[#c7c7c7]"></div>
+              <div class="col-span-2">DC LINK VOLTAGE</div>
+              <input type="number" name="dcLinkVoltage1" id="dcLinkVoltage1">
+              <input type="number" name="dcLinkVoltage2" id="dcLinkVoltage2">
+              <div>ROOM</div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="room1" id="room1">&deg;C
+              </div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="room2" id="room2">%
+              </div>
+              <div>UPS</div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="usp1" id="usp1">&deg;C
+              </div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="ups2" id="ups2">%
+              </div>
+              <input type="number" name="input7" id="input7">
+            </div>
+
+            <div class="measurement-result grid grid-cols-6 border-1 text-center mb-2">
+              <div class="row-span-2 col-span-2 bg-[#7c7c7c]"></div>
+              <div class="col-span-4 col-start-3">Current</div>
+              <div>L1</div>
+              <div>L2</div>
+              <div>L3</div>
+              <div>N</div>
+              <div class="col-span-2" style="text-align: left; padding-left: 12px;">INPUT</div>
+              <input type="number" name="input8" id="input8">
+              <input type="number" name="input9" id="input9">
+              <input type="number" name="input10" id="input10">
+              <input type="number" name="input11" id="input11">
+              <div class="col-span-2" style="text-align: left; padding-left: 12px;">OUTPUT</div>
+              <input type="number" name="output8" id="output8">
+              <input type="number" name="output9" id="output9">
+              <input type="number" name="output10" id="output10">
+              <input type="number" name="output11" id="output11">
+              <div class="row-span-2 col-span-2" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">LOAD</div>
+              <div>L2 kW</div>
+              <div>L3 kW</div>
+              <div class="col-span-2">Cos Q in - out</div>
+              <input type="number" name="load8" id="load8">
+              <input type="number" name="load9" id="load9">
+              <input type="number" name="load10" id="load10">
+              <input type="number" name="load11" id="load11">
+              <div class="row-span-2 col-span-2" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">BATT. VOLTAGE</br>TEMP. / RH</div>
+              <div class="col-span-2 bg-[#d9d9d9]">CHARGE / DISCHG CURRENT</div>
+              <input type="number" name="chrgDschrg1" id="chrgDschrg1">
+              <input type="number" name="chrgDschrg2" id="chrgDschrg2">
+              <div class="col-span-2">BATTERY ROOM</div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="battRoom1" id="battRoom1">&deg;C
+              </div>
+              <div class="grid grid-cols-3" style="padding-left: 0.75rem;">
+                <input class="col-span-2 border-none" style="padding-inline: 0;" type="number" name="battRoom2" id="battRoom2">%
+              </div>
+            </div>
+
+            <div class="measurement-result grid grid-cols-8 border-1 text-center mb-2" style="font-size: 14px;">
+              <div class="col-span-8" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">Simulation Test</div>
+              <div class="col-span-2">Mains Failure / Backup test</div>
+              <div class="flex gap-1 px-[8px] items-center" style="border-right: 0;">
+                <input type="radio" id="pass" name="radio1" value="Pass" style="width: 16px; height:16px;">
+                <label for="pass">Pass</label>
+              </div>  
+              <div class="flex gap-1 px-[8px] items-center" style="border-right: 0; border-left: 0;">
+                <input type="radio" id="fail" name="radio1" value="Fail" style="width: 16px; height:16px;">
+                <label for="fail">Fail</label>
+              </div>  
+              <div class="flex gap-1 px-[8px] items-center" style="border-left: 0;">
+                <input type="radio" id="not" name="radio1" value="Not" style="width: 16px; height:16px;">
+                <label for="not">Not</label>
+              </div>
+              <input class="col-span-3" type="text" name="mainsFailureInput" id="mainsFailureInput">
+              <div class="col-span-2">By pass & return test</div>
+              <div class="flex gap-1 px-[8px] items-center" style="border-right: 0;">
+                <input type="radio" id="pass" name="radio2" value="Pass" style="width: 16px; height:16px;">
+                <label for="pass">Pass</label>
+              </div>  
+              <div class="flex gap-1 px-[8px] items-center" style="border-right: 0; border-left: 0;">
+                <input type="radio" id="fail" name="radio2" value="Fail" style="width: 16px; height:16px;">
+                <label for="fail">Fail</label>
+              </div>  
+              <div class="flex gap-1 px-[8px] items-center" style="border-left: 0;">
+                <input type="radio" id="not" name="radio2" value="Not" style="width: 16px; height:16px;">
+                <label for="not">Not</label>
+              </div>
+              <input class="col-span-3" type="text" name="byPassInput" id="byPassInput">
+              <div class="col-span-2">Mains to restore test</div>
+              <div class="flex gap-1 px-[8px] items-center" style="border-right: 0;">
+                <input type="radio" id="pass" name="radio3" value="Pass" style="width: 16px; height:16px;">
+                <label for="pass">Pass</label>
+              </div>  
+              <div class="flex gap-1 px-[8px] items-center" style="border-right: 0; border-left: 0;">
+                <input type="radio" id="fail" name="radio3" value="Fail" style="width: 16px; height:16px;">
+                <label for="fail">Fail</label>
+              </div>  
+              <div class="flex gap-1 px-[8px] items-center" style="border-left: 0;">
+                <input type="radio" id="not" name="radio3" value="Not" style="width: 16px; height:16px;">
+                <label for="not">Not</label>
+              </div>
+              <input class="col-span-3" type="text" name="mainsToRestoreInput" id="mainsToRestoreInput">
+              <div class="col-span-2">Option test</div>
+              <div class="flex gap-1 px-[8px] items-center" style="border-right: 0;">
+                <input type="radio" id="pass" name="radio4" value="Pass" style="width: 16px; height:16px;">
+                <label for="pass">Pass</label>
+              </div>  
+              <div class="flex gap-1 px-[8px] items-center" style="border-right: 0; border-left: 0;">
+                <input type="radio" id="fail" name="radio4" value="Fail" style="width: 16px; height:16px;">
+                <label for="fail">Fail</label>
+              </div>  
+              <div class="flex gap-1 px-[8px] items-center" style="border-left: 0;">
+                <input type="radio" id="not" name="radio4" value="Not" style="width: 16px; height:16px;">
+                <label for="not">Not</label>
+              </div>
+              <input class="col-span-3" type="text" name="optionTestInput" id="optionTestInput"> 
+            </div>
+          </div>
+
+          <!-- Material/Panel - Unit/Part Number -->
+          <div id="material-unit-container" class="grid grid-cols-13 text-center mb-6">
+            <!-- Material / Panel Table -->
+            <div id="material-panel-table" class="grid grid-cols-5 col-span-5 border-none pb-7 relative">
+              <div class="col-span-3">Material/ Panel</div>
+              <div>Qty</div>
+              <div>Action</div> 
+              <!-- first row -->
+              <div class="grid grid-cols-5 col-span-5 border-none">
+                <input class="col-span-3" type="text" name="input1" id="input1" placeholder="material/panel">
+                <input type="number" name="input1" id="input1" placeholder="qty">
+                <div class="flex justify-around px-2 items-center">
+                  <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                </div>
+              </div>
+              <!-- second row -->
+              <div class="grid grid-cols-5 col-span-5 border-none">
+                <input class="col-span-3" type="text" name="input1" id="input1" placeholder="material/panel">
+                <input type="number" name="input2" id="input2" placeholder="qty">
+                <div class="flex justify-around px-2 items-center">
+                  <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                </div>
+              </div>
+              <!-- add button -->
+              <button id="add-new-material-panel" class="absolute bottom-0 left-0 bg-[#22bb33] px-2 pb-1 text-[#ffffff] rounded-b-lg">
+                Add Data +
+              </button>
+            </div>  
+            
+            <!-- Unit / Part Number Table -->
+            <div id="unit-partNumber-table" class="grid grid-cols-7 col-span-7 col-start-7 border-none pb-7 relative">
+              <div class="col-span-2">Unit</div>
+              <div class="col-span-2">Part Number</div>
+              <div>Qty</div>
+              <div>Unit</div>
+              <div>Action</div>
+              <!-- first row -->
+              <div class="grid grid-cols-7 col-span-7 border-none">
+                <input class="col-span-2" type="text" name="input1" id="input1" placeholder="unit">
+                <input class="col-span-2" type="text" name="input1" id="input1" placeholder="part number">
+                <input type="number" name="input3" id="input3" placeholder="qty">
+                <input type="number" name="input4" id="input4" placeholder="unit">
+                <div class="flex justify-around px-2 items-center">
+                  <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                </div>
+              </div>
+              <!-- second row -->
+              <div class="grid grid-cols-7 col-span-7 border-none">
+                <input class="col-span-2" type="text" name="input1" id="input1" placeholder="unit">
+                <input class="col-span-2" type="text" name="input1" id="input1" placeholder="part number">
+                <input type="number" name="input5" id="input5" placeholder="qty">
+                <input type="number" name="input6" id="input6" placeholder="unit">
+                <div class="flex justify-around px-2 items-center">
+                  <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                </div>
+              </div>
+              <!-- add button -->
+              <button id="add-new-unit-partNumber" class="absolute bottom-0 left-0 bg-[#22bb33] px-2 pb-1 text-[#ffffff] rounded-b-lg">
+                Add Data +
+              </button>
+            </div>  
+          </div>
+
+          <!-- Problem Analysis Section -->
+          <div class="custom-input-row grid grid-cols-4 mb-4">
+            <div class="custom-input-width col-span-4 col-start-1">
+              <h3>Problem Analysis <i>(Analisa Penyebab Kesusakan)</i></h3>
+              <textarea class="custom-input" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+            </div>
+          </div>
+
+          <!-- Suggestion & Conclusions Section -->
+          <div class="custom-input-row grid grid-cols-4 mb-4">
+            <div class="custom-input-width col-span-4 col-start-1">
+              <h3>Suggestion & Conclusions <i>(Saran & Kesimpulan)</i></h3>
+              <textarea class="custom-input" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+            </div>
+          </div>
+
+          <div id="signature-section" class="custom-border grid grid-cols-12">
+            <!-- Engineer Signature Panel -->
+            <div id="engineer-signature-column" class="col-span-6">
+              <h3 class="custom-border col-span-6 flex items-center pl-3 gap-1">PT. VEKTORDAYA MEKATRIKA</h3>
+              <div class="grid grid-cols-6">
+                <!-- First Signature Pad -->
+                <div class="relative col-span-3">
+                  <canvas id="engineer-signature-pad-1" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-engineer-signature-1" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+                <!-- Second Signature Pad -->
+                <div class="relative col-span-3">
+                  <canvas id="engineer-signature-pad-2" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-engineer-signature-2" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+              </div>
+              <div class="grid grid-cols-6">
+                <input type="text" placeholder="engineer name" class="custom-border mr-custom-input col-span-3">
+                <input type="text" placeholder="engineer name" class="custom-border mr-custom-input col-span-3">
+              </div>
+            </div>
+
+            <!-- Customer Signature Panel -->
+            <div id="customer-signature-column" class="col-span-6">
+              <h3 class="custom-border col-span-6 flex items-center pl-3 gap-1">CUSTOMER</h3>
+              <div class="grid grid-cols-6">
+                <!-- First Signature Pad -->
+                <div class="relative col-span-3">
+                  <canvas id="customer-signature-pad-1" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-customer-signature-1" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+                <!-- Second Signature Pad -->
+                <div class="relative col-span-3">
+                  <canvas id="customer-signature-pad-2" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-customer-signature-2" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+              </div>
+              <div class="grid grid-cols-6">
+                <input type="text" placeholder="customer name" class="custom-border mr-custom-input col-span-3">
+                <input type="text" placeholder="customer name" class="custom-border mr-custom-input col-span-3">
+              </div>
+            </div>
+          </div>
+ 
+        </div>
+
+      </div>
+    </div>
+
+    <!-- footer -->
+    {{ template "partials/footer.tpl" . }}
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/js/index.js"></script>
+
+  </body>
+</html>
