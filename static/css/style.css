@@ -2,6 +2,24 @@ body {
   overflow-x: hidden;
 }
 
+.header-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.header-menu-item a h2 {
+  padding-inline: 5px;
+}
+
+.active {
+  background-color: #FDD900;
+  height: 4px;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
 .custom-input {
   margin-top: 0.5rem;
   width: 100%;
@@ -86,6 +104,11 @@ body {
   .measurement-result {
     font-size: 14px;
   }
+  .header-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -113,6 +136,11 @@ body {
   .measurement-result {
     font-size: 16px;
   }
+  .header-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -139,5 +167,10 @@ body {
   }
   .measurement-result {
     font-size: 16px;
+  }
+  .header-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
   }
 }
