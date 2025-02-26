@@ -53,21 +53,25 @@ body {
 #material-unit-container input::-webkit-outer-spin-button,
 #material-unit-container input::-webkit-inner-spin-button,
 #assignment-product-table input::-webkit-outer-spin-button,
-#assignment-product-table input::-webkit-inner-spin-button {
+#assignment-product-table input::-webkit-inner-spin-button,
+.battery-testing-table input::-webkit-outer-spin-button,
+.battery-testing-table input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 .measurement-result > input[type=number], 
 #material-unit-container input[type=number],
-#assignment-product-table input[type=number] {
+#assignment-product-table input[type=number],
+.battery-testing-table input[type=number] {
   -moz-appearance: textfield;
 }
 
 .measurement-result div, .measurement-result input,
 #material-unit-container div, #material-unit-container input,
 #assignment-product-table div, #assignment-product-table input,
-.custom-border {
+.battery-testing-table div, .battery-testing-table input,
+.custom-border, select {
   border-width: 1px;
   border-color: #000000;
   text-align: center;
