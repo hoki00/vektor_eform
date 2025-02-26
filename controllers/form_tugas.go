@@ -10,5 +10,6 @@ type FormTugasController struct {
 
 func (c *FormTugasController) Get() {
 	// formTugas.html => engineer assignment form (form penugasan teknisi)
+	c.Data["URL"] = "/form-tugas"
 	c.TplName = "formTugas.html"
 }
