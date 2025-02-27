@@ -205,65 +205,65 @@
               <div class="row-span-4 col-span-2" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">Simulation Test</div>
               <div class="col-span-3">Mains Failure / Backup test</div>
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0;">
-                <input type="radio" id="pass" name="radio1" value="Pass" style="width: 16px; height:16px;">
-                <label for="pass">Pass</label>
+                <input type="radio" id="mainsFailurePass" name="mainsFailureRadio" value="Pass">
+                <label for="mainsFailurePass">Pass</label>
               </div>  
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0; border-left: 0;">
-                <input type="radio" id="fail" name="radio1" value="Fail" style="width: 16px; height:16px;">
-                <label for="fail">Fail</label>
+                <input type="radio" id="mainsFailureFail" name="mainsFailureRadio" value="Fail">
+                <label for="mainsFailureFail">Fail</label>
               </div>  
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-left: 0;">
-                <input type="radio" id="not" name="radio1" value="Not" style="width: 16px; height:16px;">
-                <label for="not">Not</label>
+                <input type="radio" id="mainsFailureNot" name="mainsFailureRadio" value="Not">
+                <label for="mainsFailureNot">Not</label>
               </div>
               <input class="col-span-5" type="text" name="mainsFailureInput" id="mainsFailureInput">
               <div class="col-span-3">By pass & return test</div>
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0;">
-                <input type="radio" id="pass" name="radio2" value="Pass" style="width: 16px; height:16px;">
-                <label for="pass">Pass</label>
+                <input type="radio" id="byPassPass" name="byPassRadio" value="Pass">
+                <label for="byPassPass">Pass</label>
               </div>  
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0; border-left: 0;">
-                <input type="radio" id="fail" name="radio2" value="Fail" style="width: 16px; height:16px;">
-                <label for="fail">Fail</label>
+                <input type="radio" id="byPassFail" name="byPassRadio" value="Fail">
+                <label for="byPassFail">Fail</label>
               </div>  
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-left: 0;">
-                <input type="radio" id="not" name="radio2" value="Not" style="width: 16px; height:16px;">
-                <label for="not">Not</label>
+                <input type="radio" id="byPassNot" name="byPassRadio" value="Not">
+                <label for="byPassNot">Not</label>
               </div>
               <input class="col-span-5" type="text" name="byPassInput" id="byPassInput">
               <div class="col-span-3">Mains to restore test</div>
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0;">
-                <input type="radio" id="pass" name="radio3" value="Pass" style="width: 16px; height:16px;">
-                <label for="pass">Pass</label>
+                <input type="radio" id="restorePass" name="restoreRadio" value="Pass">
+                <label for="restorePass">Pass</label>
               </div>  
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0; border-left: 0;">
-                <input type="radio" id="fail" name="radio3" value="Fail" style="width: 16px; height:16px;">
-                <label for="fail">Fail</label>
+                <input type="radio" id="restoreFail" name="restoreRadio" value="Fail">
+                <label for="restoreFail">Fail</label>
               </div>  
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-left: 0;">
-                <input type="radio" id="not" name="radio3" value="Not" style="width: 16px; height:16px;">
-                <label for="not">Not</label>
+                <input type="radio" id="restoreNot" name="restoreRadio" value="Not">
+                <label for="restoreNot">Not</label>
               </div>
               <input class="col-span-5" type="text" name="mainsToRestoreInput" id="mainsToRestoreInput">
               <div class="col-span-3">Option test</div>
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0;">
-                <input type="radio" id="pass" name="radio4" value="Pass" style="width: 16px; height:16px;">
-                <label for="pass">Pass</label>
+                <input type="radio" id="optionTestPass" name="optionTestRadio" value="Pass">
+                <label for="optionTestPass">Pass</label>
               </div>  
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-right: 0; border-left: 0;">
-                <input type="radio" id="fail" name="radio4" value="Fail" style="width: 16px; height:16px;">
-                <label for="fail">Fail</label>
+                <input type="radio" id="optionTestFail" name="optionTestRadio" value="Fail">
+                <label for="optionTestFail">Fail</label>
               </div>  
               <div class="grid grid-cols-2 px-[12px] items-center" style="border-left: 0;">
-                <input type="radio" id="not" name="radio4" value="Not" style="width: 16px; height:16px;">
-                <label for="not">Not</label>
+                <input type="radio" id="optionTestNot" name="optionTestRadio" value="Not">
+                <label for="optionTestNot">Not</label>
               </div>
               <input class="col-span-5" type="text" name="optionTestInput" id="optionTestInput">
             </div>
           </div>
 
           <!-- Measurement Result - Tablet View -->
-          <div id="measurement-result-container-table-view" class="mb-6" style="display: none;">
+          <div id="measurement-result-container-tablet-view" class="mb-6" style="display: none;">
             <h3 class="mb-2">Measurement Result <i>(Hasil Pengukuran)</i></h3>
             <div class="measurement-result grid grid-cols-9 border-1 text-center mb-2">
               <div class="row-span-2 col-span-2 bg-[#7c7c7c]"></div>
@@ -378,57 +378,57 @@
               <div class="col-span-8" style="display: flex; justify-content: left; align-items: center; padding-left: 12px;">Simulation Test</div>
               <div class="col-span-2">Mains Failure / Backup test</div>
               <div class="flex gap-1 px-[8px] items-center" style="border-right: 0;">
-                <input type="radio" id="pass" name="radio1" value="Pass" style="width: 16px; height:16px;">
+                <input type="radio" id="pass" name="radio1" value="Pass">
                 <label for="pass">Pass</label>
               </div>  
               <div class="flex gap-1 px-[8px] items-center" style="border-right: 0; border-left: 0;">
-                <input type="radio" id="fail" name="radio1" value="Fail" style="width: 16px; height:16px;">
+                <input type="radio" id="fail" name="radio1" value="Fail">
                 <label for="fail">Fail</label>
               </div>  
               <div class="flex gap-1 px-[8px] items-center" style="border-left: 0;">
-                <input type="radio" id="not" name="radio1" value="Not" style="width: 16px; height:16px;">
+                <input type="radio" id="not" name="radio1" value="Not">
                 <label for="not">Not</label>
               </div>
               <input class="col-span-3" type="text" name="mainsFailureInput" id="mainsFailureInput">
               <div class="col-span-2">By pass & return test</div>
               <div class="flex gap-1 px-[8px] items-center" style="border-right: 0;">
-                <input type="radio" id="pass" name="radio2" value="Pass" style="width: 16px; height:16px;">
+                <input type="radio" id="pass" name="radio2" value="Pass">
                 <label for="pass">Pass</label>
               </div>  
               <div class="flex gap-1 px-[8px] items-center" style="border-right: 0; border-left: 0;">
-                <input type="radio" id="fail" name="radio2" value="Fail" style="width: 16px; height:16px;">
+                <input type="radio" id="fail" name="radio2" value="Fail">
                 <label for="fail">Fail</label>
               </div>  
               <div class="flex gap-1 px-[8px] items-center" style="border-left: 0;">
-                <input type="radio" id="not" name="radio2" value="Not" style="width: 16px; height:16px;">
+                <input type="radio" id="not" name="radio2" value="Not">
                 <label for="not">Not</label>
               </div>
               <input class="col-span-3" type="text" name="byPassInput" id="byPassInput">
               <div class="col-span-2">Mains to restore test</div>
               <div class="flex gap-1 px-[8px] items-center" style="border-right: 0;">
-                <input type="radio" id="pass" name="radio3" value="Pass" style="width: 16px; height:16px;">
+                <input type="radio" id="pass" name="radio3" value="Pass">
                 <label for="pass">Pass</label>
               </div>  
               <div class="flex gap-1 px-[8px] items-center" style="border-right: 0; border-left: 0;">
-                <input type="radio" id="fail" name="radio3" value="Fail" style="width: 16px; height:16px;">
+                <input type="radio" id="fail" name="radio3" value="Fail">
                 <label for="fail">Fail</label>
               </div>  
               <div class="flex gap-1 px-[8px] items-center" style="border-left: 0;">
-                <input type="radio" id="not" name="radio3" value="Not" style="width: 16px; height:16px;">
+                <input type="radio" id="not" name="radio3" value="Not">
                 <label for="not">Not</label>
               </div>
               <input class="col-span-3" type="text" name="mainsToRestoreInput" id="mainsToRestoreInput">
               <div class="col-span-2">Option test</div>
               <div class="flex gap-1 px-[8px] items-center" style="border-right: 0;">
-                <input type="radio" id="pass" name="radio4" value="Pass" style="width: 16px; height:16px;">
+                <input type="radio" id="pass" name="radio4" value="Pass">
                 <label for="pass">Pass</label>
               </div>  
               <div class="flex gap-1 px-[8px] items-center" style="border-right: 0; border-left: 0;">
-                <input type="radio" id="fail" name="radio4" value="Fail" style="width: 16px; height:16px;">
+                <input type="radio" id="fail" name="radio4" value="Fail">
                 <label for="fail">Fail</label>
               </div>  
               <div class="flex gap-1 px-[8px] items-center" style="border-left: 0;">
-                <input type="radio" id="not" name="radio4" value="Not" style="width: 16px; height:16px;">
+                <input type="radio" id="not" name="radio4" value="Not">
                 <label for="not">Not</label>
               </div>
               <input class="col-span-3" type="text" name="optionTestInput" id="optionTestInput"> 
@@ -567,7 +567,7 @@
     {{ template "partials/footer.tpl" . }}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/static/js/index.js"></script>
+    <script src="/static/js/technicalForm.js"></script>
 
     <!-- Importing component .js file -->
     <script type="module">

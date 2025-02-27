@@ -1,0 +1,332 @@
+<!doctype html>
+<html style="overflow-x: hidden !important;"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <!-- header -->
+    {{ template "partials/header.tpl" . }}
+
+    <!-- content -->
+    <div id="content" class="bg-[#00ACBA]">
+      <div id="single-phase-form" class="bg-[#ffffff]">
+        <!-- First Section - Form Title -->
+        <div class="section pt-[40px] pb-[20px] border-b-1 border-blue-500">
+          <h1>SINGLE PHASE UPS TEST & COMM <i>(FORM TEST & COMM UPS SATU PHASE)</i></h1>
+        </div>
+
+        <!-- Third Section -->
+        <div class="section pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+          <div id="single-phase-form-third-section" class="grid grid-row gap-4">
+          <!-- UPS Test Function (Pengujian Fungsi UPS) -->
+            <h3 style="font-weight: 700;">UPS Test Function <i>(Pengujian Fungsi UPS)</i></h3>
+            <div class="custom-input-width grid grid-cols-2">
+              <div class="flex flex-col gap-2">
+                <h3>UPS Bypass Test</h3>
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="bypassTest" name="bypassTestRadio" value="Test">
+                  <label for="bypassTest">Test</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="bypassNotTest" name="bypassTestRadio" value="Not Test">
+                  <label for="bypassNotTest">Not Test</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="bypassNotAvailable" name="bypassTestRadio" value="Not Available">
+                  <label for="bypassNotAvailable">Not Available</label>
+                </div>  
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3>UPS Bypass Test Status</h3>
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="bypassTestPass" name="bypassTestStatusRadio" value="Pass">
+                  <label for="bypassTestPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="bypassTestFail" name="bypassTestStatusRadio" value="Fail">
+                  <label for="bypassTestFail">Fail</label>
+                </div>  
+              </div>
+            </div>
+
+            <div class="custom-input-width grid grid-cols-2">
+              <div class="flex flex-col gap-2">
+                <h3>Battery Backup Test</h3>
+                <div class="flex gap-2 px-3 items-center">
+                  <input type="radio" id="manualTest" name="batteryBackupRadio" value="Manual test">
+                  <div class="flex flex-col">
+                    <label for="manualTest">Manual test by input / rectifier</label>
+                    <div class="flex">
+                      <label>switch off </label>
+                      <input class="border-b px-2 w-20" type="number"/>
+                      <label> minutes</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-2 px-3 items-center">
+                  <input type="radio" id="deepTest" name="batteryBackupRadio" value="Deep test">
+                  <div class="flex flex-col">
+                    <label for="deepTest">Deep Batt.</label>
+                    <div class="flex">
+                      <label>test </label>
+                      <input class="border-b px-2 w-20" type="number"/>
+                      <label> minutes</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="performTest" name="batteryBackupRadio" value="Perform Battery Test">
+                  <label for="performTest">Perform Battery Test</label>
+                </div>  
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3>Battery Backup Test Status</h3>
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="backupTestPass" name="backupTestStatusRadio" value="Pass">
+                  <label for="backupTestPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="backupTestFail" name="backupTestStatusRadio" value="Fail">
+                  <label for="backupTestFail">Fail</label>
+                </div>  
+              </div>
+            </div>
+
+            <div class="custom-input-width grid grid-cols-2">
+              <div class="flex flex-col gap-2">
+                <h3>Battery Charging Check</h3>
+                <div class="grid grid-cols-4 gap-2 px-[12px] items-center">
+                  <label for="chargingCheckVolt">Volt:</label>
+                  <input class="border-1 px-1" type="number" id="chargingCheckVolt" name="chargingCheckVolt">
+                </div>  
+                <div class="grid grid-cols-4 gap-2 px-[12px] items-center">
+                  <label for="chargingCheckAmpere">Ampere:</label>
+                  <input class="border-1 px-1" type="number" id="chargingCheckAmpere" name="chargingCheckAmpere">
+                </div>  
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3>Battery Charging Check Status</h3>
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="chargingCheckPass" name="chargingCheckStatusRadio" value="Pass">
+                  <label for="chargingCheckPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="chargingCheckFail" name="chargingCheckStatusRadio" value="Fail">
+                  <label for="chargingCheckFail">Fail</label>
+                </div>  
+              </div>
+            </div>
+          <!-- End of UPS Test Function (Pengujian Fungsi UPS) -->
+
+          <!-- Optional Check (Pemeriksaan Perangkat Tambahan) -->
+            <h3 style="font-weight: 700;">Optional Check <i>(Pemeriksaan Perangkat Tambahan)</i></h3>
+            <div class="custom-input-row grid grid-cols-5">
+              <h3 class="col-span-2">SNMP:</h3>
+              <div class="col-span-3">
+                <div class="flex justify-between">
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="snmpInstall" name="snmpRadio" value="Install">
+                    <label for="snmpInstall">Install</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="snmpNotInstall" name="snmpRadio" value="Not Install">
+                    <label for="snmpNotInstall">Not Install</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="snmpPass" name="snmpRadio" value="Pass">
+                    <label for="snmpPass">Pass</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="snmpFail" name="snmpRadio" value="Fail">
+                    <label for="snmpFail">Fail</label>
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <div class="custom-input-row grid grid-cols-5">
+              <h3 class="col-span-2">Dry Port:</h3>
+              <div class="col-span-3">
+                <div class="flex justify-between">
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="dryPortInstall" name="dryPortRadio" value="Install">
+                    <label for="dryPortInstall">Install</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="dryPortNotInstall" name="dryPortRadio" value="Not Install">
+                    <label for="dryPortNotInstall">Not Install</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="dryPortPass" name="dryPortRadio" value="Pass">
+                    <label for="dryPortPass">Pass</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="dryPortFail" name="dryPortRadio" value="Fail">
+                    <label for="dryPortFail">Fail</label>
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <div class="custom-input-row grid grid-cols-5">
+              <h3 class="col-span-2">RS 232 & Monitoring Software:</h3>
+              <div class="col-span-3">
+                <div class="flex justify-between">
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="rsInstall" name="rsRadio" value="Install">
+                    <label for="rsInstall">Install</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="rsNotInstall" name="rsRadio" value="Not Install">
+                    <label for="rsNotInstall">Not Install</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="rsPass" name="rsRadio" value="Pass">
+                    <label for="rsPass">Pass</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="rsFail" name="rsRadio" value="Fail">
+                    <label for="rsFail">Fail</label>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          <!-- End of Optional Check (Pemeriksaan Perangkat Tambahan) -->
+           
+          <!-- Battery Measurement Result (Hasil Pengukuran Baterai) -->
+            <h3 style="font-weight: 700;">Battery Measurement Result <i>(Hasil Pengukuran Baterai)</i></h3>
+            <div class="grid grid-cols-2 gap-2">
+              <div id="battery-mr-table-string-1" class="battery-mr-table grid pb-7 border-none relative">
+                <h3 class="border-1 text-left p-[12px]">STRING: 1</h3>
+                <div class="grid grid-cols-2 border-none">
+                  <div class="flex flex-row gap-2 items-center pl-[12px] py-1">
+                    <input type="radio" id="string-1-charge" >
+                    <label for="string-1-charge">Charge</label>
+                  </div>
+                  <div class="flex flex-row gap-2 items-center pl-[12px] py-1">
+                    <input type="radio" id="string-1-discharge" >
+                    <label for="string-1-discharge">Discharge</label>
+                  </div>
+                </div>
+                <div class="grid grid-cols-3 border-none">
+                  <div>No. Batt</div>
+                  <div>Voltage</div>
+                  <div>Action</div>
+                </div>
+                <!-- first row -->
+                <div class="grid grid-cols-3 border-none">
+                  <input type="number" class="mr-custom-input" name="string1-noBatt1" id="string1-noBatt1" placeholder="0">
+                  <input type="number" class="mr-custom-input" name="string1-voltage1" id="string1-voltage1" placeholder="0">
+                  <div class="flex justify-around px-2 items-center">
+                    <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                  </div>
+                </div>
+                <!-- add button -->
+                <button id="add-new-mr-battery-string-1" class="absolute bottom-0 left-0 bg-[#22bb33] px-2 pb-1 text-[#ffffff] rounded-b-lg">
+                  Add Data +
+                </button>
+              </div>
+              <div id="battery-mr-table-string-2" class="battery-mr-table grid pb-7 border-none relative">
+                <h3 class="border-1 text-left p-[12px]">STRING: 2</h3>
+                <div class="grid grid-cols-2 border-none">
+                  <div class="flex flex-row gap-2 items-center pl-[12px] py-1">
+                    <input type="radio" id="string-1-charge" >
+                    <label for="string-1-charge">Charge</label>
+                  </div>
+                  <div class="flex flex-row gap-2 items-center pl-[12px] py-1">
+                    <input type="radio" id="string-1-discharge" >
+                    <label for="string-1-discharge">Discharge</label>
+                  </div>
+                </div>
+                <div class="grid grid-cols-3 border-none">
+                  <div>No. Batt</div>
+                  <div>Voltage</div>
+                  <div>Action</div>
+                </div>
+                <!-- first row -->
+                <div class="grid grid-cols-3 border-none">
+                  <input type="number" class="mr-custom-input" name="string2-noBatt1" id="string2-noBatt1" placeholder="0">
+                  <input type="number" class="mr-custom-input" name="string2-voltage1" id="string2-voltage1" placeholder="0">
+                  <div class="flex justify-around px-2 items-center">
+                    <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                  </div>
+                </div>
+                <!-- add button -->
+                <button id="add-new-mr-battery-string-2" class="absolute bottom-0 left-0 bg-[#22bb33] px-2 pb-1 text-[#ffffff] rounded-b-lg">
+                  Add Data +
+                </button>
+              </div>
+            </div> 
+          <!-- End of Battery Measurement Result (Hasil Pengukuran Baterai) -->
+          </div>
+        </div>
+        
+        <!-- Forth Section -->
+        <div class="section pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+          <div class="custom-input-width">
+            <h3>Conclusions</h3>
+            <textarea class="custom-input" rows="4" placeholder="conclusions..."></textarea>
+          </div>
+        </div>
+
+        <!-- Fifth Section -->
+        <div class="section pt-4 pb-6 border-b-1 border-blue-500">
+          <div id="signature-section" class="border-none grid grid-cols-4">
+            <!-- Engineer Signature Panel -->
+            <div id="engineer-signature-column" class="custom-border col-span-1 grid-cols-1">
+              <h3 class="custom-border flex items-center pl-3 col-start-1">Engineer</h3>
+              <div class="grid col-start-1">
+                <div class="relative">
+                  <canvas id="engineer-signature-pad" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-engineer-signature" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+              </div>
+              <div class="grid col-start-1">
+                <input type="text" placeholder="engineer name" class="w-full px-3 py-1 custom-border">
+              </div>
+            </div>
+
+            <!-- Customer Signature Panel -->
+            <div id="customer-signature-column" class="custom-border col-span-2 grid-cols-2 col-start-4">
+              <h3 class="custom-border flex items-center pl-3 col-start-4">Customer</h3>
+              <div class="grid col-start-4">
+                <div class="relative">
+                  <canvas id="customer-signature-pad" class="custom-border w-full"></canvas>
+                  <img src="/static/images/clear.png" alt="clear" id="clear-customer-signature" class="absolute w-6 h-6 right-1 top-1">
+                </div>
+              </div>
+              <div class="grid col-start-4">
+                <input type="text" placeholder="customer name" class="w-full px-3 py-1 custom-border">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    {{ template "partials/footer.tpl" . }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/js/singlePhaseForm.js"></script>
+
+    <!-- Importing component .js file -->
+    <script type="module">
+      import { customWidth } from '/static/js/components/customWidth.js';
+      window.addEventListener('load', function() {
+        customWidth('single-phase-form');
+      });
+      window.addEventListener('resize', function() {
+        customWidth('single-phase-form');
+      });
+
+      import { initializeSignaturePad } from '/static/js/components/signaturePad.js';
+      // Engineer signature pads
+      initializeSignaturePad("engineer-signature-pad", "clear-engineer-signature");
+      // Customer signature pads
+      initializeSignaturePad("customer-signature-pad", "clear-customer-signature");
+    </script>
+  </body>
+</html>

@@ -47,6 +47,19 @@ body {
   padding-bottom: 0.25rem;  
 }
 
+input[type=radio] {
+  height: 16px;
+  width: 16px;
+}
+
+#single-phase-form-third-section > div {
+  padding-left: 12px;
+}
+
+label {
+  cursor: pointer;
+}
+
 /* remove increment/decrement arrow on input tag */
 .measurement-result > input::-webkit-outer-spin-button,
 .measurement-result > input::-webkit-inner-spin-button,
@@ -71,6 +84,7 @@ body {
 #material-unit-container div, #material-unit-container input,
 #assignment-product-table div, #assignment-product-table input,
 .battery-testing-table div, .battery-testing-table input,
+.battery-mr-table div, .battery-mr-table input,
 .custom-border, select {
   border-width: 1px;
   border-color: #000000;
@@ -113,6 +127,9 @@ body {
     flex-direction: column;
     align-self: flex-start;
   }
+  label {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -145,6 +162,9 @@ body {
     flex-direction: column;
     align-self: flex-end;
   }
+  label {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -176,5 +196,8 @@ body {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+  }
+  label {
+    font-size: 16px;
   }
 }
