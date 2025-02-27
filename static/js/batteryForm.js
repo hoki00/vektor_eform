@@ -51,36 +51,3 @@ function removeRow(element) {
     const row = element.parentElement.parentElement;
     row.remove();
 }
-
-
-// Signature pad function
-function initializeSignaturePad(canvasId, clearButtonId) {
-    var canvas = document.getElementById(canvasId);
-
-    // Resize canvas
-    function resizeCanvas() {
-        var ratio = Math.max(window.devicePixelRatio || 1, 1);
-        canvas.width = canvas.offsetWidth * ratio;
-        canvas.height = canvas.offsetHeight * ratio;
-        canvas.getContext("2d").scale(ratio, ratio);
-    }
-
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-
-    // Initialize signature pad
-    var signaturePad = new SignaturePad(canvas, { backgroundColor: 'rgb(250,250,250)' });
-
-    document.getElementById(clearButtonId).addEventListener('click', function() {
-        signaturePad.clear();
-    });
-
-    return signaturePad;
-}
-
-// Engineer signature pads
-var engineerSignaturePad = initializeSignaturePad("engineer-signature-pad", "clear-engineer-signature");
-
-// Customer signature pads
-var customerSignaturePad = initializeSignaturePad("customer-signature-pad", "clear-customer-signature");
-

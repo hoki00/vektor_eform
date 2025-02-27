@@ -14,9 +14,11 @@ export function customWidth(activePageElementId) {
     var customCalculationInputWidth = (selectedActiveForm.offsetWidth - 100 - (customCalculationGap * 3)) / 4
 
     let customInputWidthElements = document.querySelectorAll('.custom-input-width');
-    customInputWidthElements.forEach(function(element) {
-        element.width = customCalculationInputWidth;
-    });
+    if (customInputWidthElements) {
+        customInputWidthElements.forEach(function(element) {
+            element.width = customCalculationInputWidth;
+        });
+    }
 
     let customInputRowElements = document.querySelectorAll('.custom-input-row');
     customInputRowElements.forEach(function(element) {

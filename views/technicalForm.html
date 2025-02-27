@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="icon" href="data:,">
   </head>
   <body>
     <!-- header -->
@@ -568,16 +569,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/static/js/index.js"></script>
 
+    <!-- Importing component .js file -->
     <script type="module">
       import { customWidth } from '/static/js/components/customWidth.js';
-
       window.addEventListener('load', function() {
         customWidth('technical-detail-form');
       });
-
       window.addEventListener('resize', function() {
         customWidth('technical-detail-form');
       });
+
+      import { initializeSignaturePad } from '/static/js/components/signaturePad.js';
+      // Engineer signature pads
+      initializeSignaturePad("engineer-signature-pad-1", "clear-engineer-signature-1");
+      initializeSignaturePad("engineer-signature-pad-2", "clear-engineer-signature-2");
+      // Customer signature pads
+      initializeSignaturePad("customer-signature-pad-1", "clear-customer-signature-1");
+      initializeSignaturePad("customer-signature-pad-2", "clear-customer-signature-2");
     </script>
   </body>
 </html>
