@@ -17,7 +17,8 @@
       <a href="#"><h2>Form Survey</h2></a>
     </div>
     <div class="header-menu-item">
-      <a href="#"><h2>Form Test</h2></a>
+      <a href="/single-phase-form"><h2>Form Test</h2></a>
+      <div class="{{if eq .URL "/single-phase-form"}}active{{end}}"></div>    
     </div>
     <div class="header-menu-item">
       <a href="#"><h2>Report</h2></a>
@@ -54,7 +55,8 @@
           <a href="#"><h2>Form Survey</h2></a>
         </div>
         <div class="header-menu-item">
-          <a href="#"><h2>Form Test</h2></a>
+          <a href="/single-phase-form"><h2>Form Test</h2></a>
+          <div class="{{if eq .URL "/single-phase-form"}}active{{end}}"></div>   
         </div>
         <div class="header-menu-item">
           <a href="#"><h2>Report</h2></a>
