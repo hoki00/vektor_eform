@@ -1,32 +1,3 @@
-function customWidth() {
-    var technicalDetailForm = document.getElementById("battery-checklist-form").offsetWidth;
-
-    var windowWidth = window.innerWidth;
-    var customCalculationGap = 0;
-    if (windowWidth >= 1440) {
-        customCalculationGap = 64;
-    } else if (windowWidth >= 1024 && windowWidth < 1440 ) {
-        customCalculationGap = 32;
-    } else {
-        customCalculationGap = 16;
-    }
-
-    var customCalculationInputWidth = (technicalDetailForm - 100 - (customCalculationGap * 3)) / 4
-
-    let customInputWidthElements = document.querySelectorAll('.custom-input-width');
-    customInputWidthElements.forEach(function(element) {
-        element.width = customCalculationInputWidth;
-    });
-
-    let customInputRowElements = document.querySelectorAll('.custom-input-row');
-    customInputRowElements.forEach(function(element) {
-        element.style.gap = customCalculationGap + 'px';
-    });
-
-}
-window.addEventListener('resize', customWidth);
-customWidth();
-
 // Create new row (battery - string-1)
 document.getElementById('add-new-battery-string-1').addEventListener('click', function() {
     const newRow = document.createElement('div');
@@ -80,36 +51,3 @@ function removeRow(element) {
     const row = element.parentElement.parentElement;
     row.remove();
 }
-
-
-// Signature pad function
-function initializeSignaturePad(canvasId, clearButtonId) {
-    var canvas = document.getElementById(canvasId);
-
-    // Resize canvas
-    function resizeCanvas() {
-        var ratio = Math.max(window.devicePixelRatio || 1, 1);
-        canvas.width = canvas.offsetWidth * ratio;
-        canvas.height = canvas.offsetHeight * ratio;
-        canvas.getContext("2d").scale(ratio, ratio);
-    }
-
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-
-    // Initialize signature pad
-    var signaturePad = new SignaturePad(canvas, { backgroundColor: 'rgb(250,250,250)' });
-
-    document.getElementById(clearButtonId).addEventListener('click', function() {
-        signaturePad.clear();
-    });
-
-    return signaturePad;
-}
-
-// Engineer signature pads
-var engineerSignaturePad = initializeSignaturePad("engineer-signature-pad", "clear-engineer-signature");
-
-// Customer signature pads
-var customerSignaturePad = initializeSignaturePad("customer-signature-pad", "clear-customer-signature");
-
