@@ -12,4 +12,5 @@ func init() {
     beego.Router("battery-form", &controllers.BatteryFormController{})
     beego.Router("single-phase-form", &controllers.SinglePhaseFormController{})
     beego.Router("installation-survey-form", &controllers.InstallationSurveyFormController{})
+    beego.Router("project-testing-form", &controllers.ProjectChecklistFormController{})
 }

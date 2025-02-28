@@ -22,7 +22,8 @@
       <div class="{{if eq .URL "/single-phase-form"}}active{{end}}"></div>    
     </div>
     <div class="header-menu-item">
-      <a href="#"><h2>Report</h2></a>
+      <a href="/project-testing-form"><h2>Checklist Form</h2></a>
+      <div class="{{if eq .URL "/project-testing-form"}}active{{end}}"></div>
     </div>
     <div class="header-menu-item">
       <a href="#"><h2>Berita Acara</h2></a>
@@ -61,7 +62,8 @@
           <div class="{{if eq .URL "/single-phase-form"}}active{{end}}"></div>   
         </div>
         <div class="header-menu-item">
-          <a href="#"><h2>Report</h2></a>
+          <a href="/project-testing-form"><h2>Checklist Form</h2></a>
+          <div class="{{if eq .URL "/project-testing-form"}}active{{end}}"></div>
         </div>
         <div class="header-menu-item">
           <a href="#"><h2>Berita Acara</h2></a>
