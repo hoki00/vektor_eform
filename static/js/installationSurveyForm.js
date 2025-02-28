@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create the new row with unique Ids
         const timestamp = new Date().getTime();
         newRow.innerHTML = `
-            <input type="text" class="mr-custom-input" name="product${timestamp}" id="product${timestamp}" placeholder="product name">
-            <input type="text" class="mr-custom-input" name="typr${timestamp}" id="typr${timestamp}" placeholder="type">
-            <input type="number" class="mr-custom-input" name="capacity${timestamp}" id="capacity${timestamp}" placeholder="0">
-            <input type="number" class="mr-custom-input" name="quantity${timestamp}" id="string1-voltage${timestamp}" placeholder="0">
+            <input type="text" class="table-custom-input" name="product${timestamp}" id="product${timestamp}" placeholder="product name">
+            <input type="text" class="table-custom-input" name="typr${timestamp}" id="typr${timestamp}" placeholder="type">
+            <input type="number" class="table-custom-input" name="capacity${timestamp}" id="capacity${timestamp}" placeholder="0">
+            <input type="number" class="table-custom-input" name="quantity${timestamp}" id="string1-voltage${timestamp}" placeholder="0">
             <div class="flex justify-around px-2 items-center">
                 <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
             </div>
