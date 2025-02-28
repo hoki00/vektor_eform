@@ -1,0 +1,200 @@
+<!-- installation survey form content page 1 -->
+
+  <!-- First Section - Form Title -->
+  <div class="section pt-[40px] pb-[20px] border-b-1 border-blue-500">
+    <h1>UPS INSTALLATION SURVEY FORM <i>(FORM SURVEY PEMASNAGAN UPS)</i></h1>
+  </div>
+  
+  <!-- Second Section -->
+  <div class="section pt-4 pb-[20px] border-b-1 border-blue-500">
+    <div class="grid grid-row gap-4">
+      <div class="custom-input-row grid grid-cols-3">
+        <div class="custom-input-width">
+          <h3>Document Number</h3>
+          <input class="custom-input" type="text" placeholder="document number"/>
+        </div>
+        <div class="custom-input-width">
+          <h3>Revision Number</h3>
+          <input class="custom-input" type="number" placeholder="0"/>
+        </div>
+        <div class="custom-input-width">
+          <h3>Release Date</i></h3>
+          <input class="custom-input w-[240px]" type="date"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third Section -->
+  <div class="section pt-4 pb-[20px] border-b-1 border-blue-500">
+    <div id="installation-survey-form-third-section" class="grid gap-3">
+      <!-- Customer Information Section -->
+      <div>
+        <h3>Customer Info</h3>
+        <div class="grid grid-row gap-4">
+          <div class="custom-input-row grid grid-cols-3">
+            <div class="custom-input-width col-span-2">
+              <h3>Customer</h3>
+              <input class="custom-input" type="text" placeholder="customer name"/>
+            </div>
+            <div class="custom-input-width">
+              <h3>Date</i></h3>
+              <input class="custom-input w-[240px]" type="date"/>
+            </div>
+          </div>
+          <div class="custom-input-row grid grid-cols-3">
+            <div class="custom-input-width">
+              <h3>Contact Person</h3>
+              <input class="custom-input" type="text" placeholder="contact person"/>
+            </div>
+            <div class="custom-input-width">
+              <h3>Phone</h3>
+              <input class="custom-input" type="number" placeholder="phone"/>
+            </div>
+            <div class="custom-input-width">
+              <h3>Email</h3>
+              <input class="custom-input" type="text" placeholder="email"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Information Section -->
+      <div>
+        <h3>Project Info</h3>
+        <div class="grid grid-row gap-4">
+          <div class="custom-input-row grid grid-cols-3">
+            <div class="custom-input-width col-span-3">
+              <h3>Project</h3>
+              <input class="custom-input" type="text" placeholder="project name"/>
+            </div>
+          </div>
+
+          <!-- Product Information Table -->
+          <div id="product-information-table" class="product-information-table grid pb-7 border-none relative">
+            <div class="grid grid-cols-5 border-none">
+              <div>Product Name</div>
+              <div>Type</div>
+              <div>Capacity</div>
+              <div>Quantity</div>
+              <div>Action</div>
+            </div>
+            <!-- first row -->
+            <div class="grid grid-cols-5 border-none">
+              <input type="text" class="mr-custom-input" name="product-name1" id="product-name1" placeholder="product name">
+              <input type="text" class="mr-custom-input" name="type1" id="type1" placeholder="type">
+              <input type="number" class="mr-custom-input" name="capacity1" id="capacity1" placeholder="0">
+              <input type="number" class="mr-custom-input" name="quantity1" id="quantity1" placeholder="0">
+              <div class="flex justify-around px-2 items-center">
+                <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+              </div>
+            </div>
+            <!-- add button -->
+            <button id="add-new-product-information" class="absolute bottom-0 left-0 bg-[#22bb33] px-2 pb-1 text-[#ffffff] rounded-b-lg">
+              Add Data +
+            </button>
+          </div>
+
+          <div class="custom-input-row grid">
+            <div class="custom-input-width">
+              <h3>Note</h3>
+              <textarea class="custom-input" rows="4" placeholder="note..."></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location Information Section -->
+      <div>
+        <h3>Location</h3>
+        <div class="flex flex-col gap-3">
+          <!-- UPS Room -->
+          <div class="grid grid-cols-6">
+            <h3 class="col-span-1">UPS Room</h3>
+            <div class="col-span-5 flex gap-2">
+              <label><input type="radio" name="roomRadio" value="Available"> Available</label>
+              <label><input type="radio" name="roomRadio" value="Not Available"> Not Available (Attach image)</label>
+            </div>
+          </div>
+          <!-- Size -->
+          <div class="grid grid-cols-6">
+            <h3 class="col-span-1">Size</h3>
+            <input type="number" id="locationSize" name="locationSize" class="col-start-2 border px-2 text-xs" value="0">
+          </div>
+          <!-- Floor -->
+          <div class="grid grid-cols-6">
+            <h3 class="col-span-1">Floor</h3>
+            <input type="number" id="locationFloor" name="locationFloor" class="border px-2 text-xs" value="0">
+          </div>
+          <!-- Lift -->
+          <div class="grid grid-cols-6">
+            <h3 class="col-span-1">Lift</h3>
+            <div class="col-span-5">
+              <label>Yes, cap. <input type="number" class="border-b px-2 w-1/12 h-4"> ton</label>
+              <label><input type="number" class="border-b px-2 w-1/12 h-4"> m²</label>
+            </div>
+          </div>
+          <!-- Stairs -->
+          <div class="grid grid-cols-6">
+            <h3 class="col-span-1">Stairs</h3>
+            <div class="col-span-5">
+              <label><input type="radio" name="stairsRadio"> Not Available</label>
+              <label><input type="radio" name="stairsRadio"> Available <input type="number" class="border-b px-2 w-1/12 h-4"></label>
+            </div>
+          </div>
+          <!-- Loading Dock -->
+          <div class="grid grid-cols-6">
+            <h3 class="col-span-1">Loading Dock</h3>
+            <div class="col-span-5">
+              <label><input type="radio" name="loadingDockRadio"> Not Available</label>
+              <label><input type="radio" name="loadingDockRadio"> Available on the <input type="number" class="border-b px-2 w-1/12 h-4"> floor</label>
+            </div>
+          </div>
+          
+          <div class="custom-input-row grid">
+            <div class="custom-input-width">
+              <h3>Note</h3>
+              <textarea class="custom-input" rows="4" placeholder="note..."></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UPS Room Layout Section -->
+      <div>
+        <h3>UPS Room Layout</h3>
+        <div class="ml-[12px] relative border-1 p-3">
+          <label for="layout" class="absolute top-0 right-0 border-1">Upload</label>
+          <div class="flex justify-center items-center">
+            <img id="layout-preview" class="mb-3 col-sm-2" />
+          </div>
+          <input type="file" name="layout" id="layout" onchange="previewImage()" style="display: none;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Delete the selected row (product information)
+    function removeRow(element) {
+      const row = element.parentElement.parentElement;
+      row.remove();
+    }
+
+    // image preview
+    function previewImage() {
+      const image = document.querySelector('#layout');
+      const imgPreview = document.querySelector('#layout-preview');
+        
+      imgPreview.style.display = 'block';
+  
+      const oFReader = new FileReader();
+      oFReader.readAsDataURL(image.files[0]);
+  
+      oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+      }
+    }
+  </script>
+
+<!-- end of installation survey form content page 1 -->

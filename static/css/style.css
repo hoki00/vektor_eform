@@ -40,7 +40,8 @@ body {
 /* mr-custom-input: mr stands for measurement result */
 .measurement-result > input,
 #material-unit-container input,
-.mr-custom-input {
+.mr-custom-input,
+.electrical-data-table > input {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.25rem;
@@ -52,8 +53,13 @@ input[type=radio] {
   width: 16px;
 }
 
-#single-phase-form-third-section > div {
+#single-phase-form-third-section > div,
+#installation-survey-form-third-section > div > div {
   padding-left: 12px;
+}
+
+#installation-survey-form-third-section > div > h3 {
+  margin-bottom: 4px;
 }
 
 label {
@@ -85,6 +91,8 @@ label {
 #assignment-product-table div, #assignment-product-table input,
 .battery-testing-table div, .battery-testing-table input,
 .battery-mr-table div, .battery-mr-table input,
+.product-information-table div, .product-information-table input,
+.electrical-data-table div, .electrical-data-table input,
 .custom-border, select {
   border-width: 1px;
   border-color: #000000;

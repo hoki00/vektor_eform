@@ -4,6 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('single-phase-form-page-2').style.display = "block";
         document.getElementById('single-phase-form-next-button').style.display = "none";
         document.getElementById('single-phase-form-prev-button').style.display = "block";
+
+        // Dynamically import the signaturePad.js module
+        import('/static/js/components/signaturePad.js').then(({ initializeSignaturePad }) => {
+            // Initialize Engineer signature pads
+            initializeSignaturePad("engineer-signature-pad", "clear-engineer-signature");
+            // Initialize Customer signature pads
+            initializeSignaturePad("customer-signature-pad", "clear-customer-signature");
+        }).catch(error => {
+            console.error("Error loading signaturePad.js:", error);
+        });
     });
 
     document.getElementById('single-phase-form-prev-button').addEventListener('click', function() {
