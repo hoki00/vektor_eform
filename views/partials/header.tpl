@@ -33,7 +33,7 @@
 <div id="header-tablet-view" class="px-[30px] pt-[35px]" style="padding-bottom: 0; display: none;">
   <div class="flex flex-row gap-4 justify-between">
     <img src="/static/images/logo.png" alt="logo" class="w-[100px] pb-6">
-    <img src="/static/images/hamburger-menu-icon.png" id="hamburger-menu-icon" alt="logo" class="size-[30px]  flex self-center">
+    <img src="/static/images/hamburger_menu_icon.png" id="hamburger-menu-icon" alt="logo" class="size-[30px]  flex self-center">
   </div>
 
   <div id="hamburger-menu-overlay" class="justify-items-end" style="background-color: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; position: fixed; top: 0; right: 0; z-index: 2; box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); display: none;">
