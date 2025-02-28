@@ -14,7 +14,8 @@
       <div class="{{if eq .URL "/battery-form"}}active{{end}}"></div>    
     </div>
     <div class="header-menu-item">
-      <a href="#"><h2>Form Survey</h2></a>
+      <a href="/installation-survey-form"><h2>Form Survey</h2></a>
+      <div class="{{if eq .URL "/installation-survey-form"}}active{{end}}"></div>  
     </div>
     <div class="header-menu-item">
       <a href="/single-phase-form"><h2>Form Test</h2></a>
@@ -52,7 +53,8 @@
           <div class="{{if eq .URL "/battery-form"}}active{{end}}"></div> 
         </div>
         <div class="header-menu-item">
-          <a href="#"><h2>Form Survey</h2></a>
+          <a href="/installation-survey-form"><h2>Form Survey</h2></a>
+          <div class="{{if eq .URL "/installation-survey-form"}}active{{end}}"></div>  
         </div>
         <div class="header-menu-item">
           <a href="/single-phase-form"><h2>Form Test</h2></a>
