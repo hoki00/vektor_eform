@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create the new row with unique Ids
         const timestamp = new Date().getTime();
         newRow.innerHTML = `
-            <input type="number" class="mr-custom-input" name="string1-noBatt${timestamp}" id="string1-noBatt${timestamp}" placeholder="0">
-            <input type="number" class="mr-custom-input" name="string1-voltage${timestamp}" id="string1-voltage${timestamp}" placeholder="0">
+            <input type="number" class="table-custom-input" name="string1-noBatt${timestamp}" id="string1-noBatt${timestamp}" placeholder="0">
+            <input type="number" class="table-custom-input" name="string1-voltage${timestamp}" id="string1-voltage${timestamp}" placeholder="0">
             <div class="flex justify-around px-2 items-center">
                 <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
             </div>
@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create the new row with unique Ids
         const timestamp = new Date().getTime();
         newRow.innerHTML = `
-            <input type="number" class="mr-custom-input" name="string2-noBatt${timestamp}" id="string2-noBatt${timestamp}" placeholder="0">
-            <input type="number" class="mr-custom-input" name="string2-voltage${timestamp}" id="string2-voltage${timestamp}" placeholder="0">
+            <input type="number" class="table-custom-input" name="string2-noBatt${timestamp}" id="string2-noBatt${timestamp}" placeholder="0">
+            <input type="number" class="table-custom-input" name="string2-voltage${timestamp}" id="string2-voltage${timestamp}" placeholder="0">
             <div class="flex justify-around px-2 items-center">
                 <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
             </div>

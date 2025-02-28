@@ -37,10 +37,9 @@ body {
   outline: none;
 }
 
-/* mr-custom-input: mr stands for measurement result */
 .measurement-result > input,
 #material-unit-container input,
-.mr-custom-input,
+.table-custom-input,
 .electrical-data-table > input {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -86,6 +85,7 @@ label {
   -moz-appearance: textfield;
 }
 
+/* battery-mr-table: mr stands for measurement result */
 .measurement-result div, .measurement-result input,
 #material-unit-container div, #material-unit-container input,
 #assignment-product-table div, #assignment-product-table input,
