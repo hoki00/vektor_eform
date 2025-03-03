@@ -53,7 +53,8 @@ input[type=radio] {
 }
 
 #single-phase-form-third-section > div,
-#installation-survey-form-third-section > div > div {
+#installation-survey-form-third-section > div > div,
+#project-checklist-form-third-section > div {
   padding-left: 12px;
 }
 

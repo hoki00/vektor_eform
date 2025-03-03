@@ -1,0 +1,339 @@
+<!-- single phase form content page 2 -->
+
+  <!-- First Section - Form Title -->
+  <div class="section pt-[40px] pb-[20px] border-b-1 border-blue-500">
+    <h1>TESTING & COMMISIONING REPORT <i>(UPS PROJECT & CHECKLIST FORM)</i></h1>
+  </div>
+
+  <!-- Third Section (Page 2) -->
+    <div class="section pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+      <div id="single-phase-form-third-section" class="grid grid-row gap-4">
+        <!-- UPS Input Parameter (Setting Parameter Input UPS) -->
+          <h3 style="font-weight: 700;">UPS Input Parameter <i>(Setting Parameter Input UPS)</i></h3>
+          <div class="custom-input-row grid grid-cols-2 gap-2">
+            <div class="custom-input-width grid grid-cols-4 gap-2">
+              <label class="col-span-2">Input Nominal Voltage</label>
+              <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              <label>VAC</label>
+            </div>
+            <div class="custom-input-width grid grid-cols-4 gap-2">
+              <label class="col-span-2">Nominal Frequency</label>
+              <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              <label>Hz</label>
+            </div>
+          </div>
+
+          <div>
+            <h3>Transformer Configuration</h3>
+            <div class="custom-input-row grid grid-cols-2 gap-2 ml-[12px]">
+              <div class="custom-input-width grid grid-cols-2 gap-2 col-start-1">
+                <label>Rectifier Input</label>
+                <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              </div>
+              <div class="custom-input-width grid grid-cols-2 gap-2">
+                <label>By Pass input</label>
+                <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-input-row grid grid-cols-4">
+            <h3>Input Configuration:</h3>
+            <div class="flex col-span-3">
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="singleInput" name="inputConfigurationRadio" value="Single">
+                <label for="singleInput">Single Input Feed</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="dualInput" name="inputConfigurationRadio" value="Dual">
+                <label for="dualInput">Dual Input Feed</label>
+              </div>  
+            </div>
+          </div>
+
+          <div>
+            <h3>Main Isolator Type, Size & Pole</h3>
+            <div class="custom-input-row grid grid-cols-2 gap-2 ml-[12px]">
+              <div class="custom-input-width grid grid-cols-2 gap-2 col-start-1">
+                <label>Rectifier Input</label>
+                <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              </div>
+              <div class="custom-input-width grid grid-cols-2 gap-2">
+                <label>By Pass input</label>
+                <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Input Cable Size</h3>
+            <div class="custom-input-row grid grid-cols-2 gap-2 ml-[12px]">
+              <div class="custom-input-width grid grid-cols-2 gap-2 col-start-1">
+                <label>Rectifier Input</label>
+                <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              </div>
+              <div class="custom-input-width grid grid-cols-2 gap-2">
+                <label>By Pass input</label>
+                <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              </div>
+            </div>
+          </div>
+        <!-- End of UPS Input Parameter (Setting Parameter Input UPS) -->
+
+        <!-- UPS Outut Parameter (Setting Parameter Output UPS) -->
+          <h3 style="font-weight: 700;">UPS Outut Parameter <i>(Setting Parameter Output UPS)</i></h3>
+          <div class="custom-input-row grid grid-cols-2 gap-2">
+            <div class="custom-input-width grid grid-cols-4 gap-2">
+              <label class="col-span-2">Output Nominal Voltage</label>
+              <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              <label>VAC</label>
+            </div>
+            <div class="custom-input-width grid grid-cols-4 gap-2">
+              <label class="col-span-2">Nominal Frequency</label>
+              <input class="table-custom-input h-[20px] border-b-1" type="number" placeholder="0"/>
+              <label>Hz</label>
+            </div>
+          </div>
+          <div class="custom-input-row grid grid-cols-3 gap-2">
+            <div class="custom-input-width grid">
+              <label>Transformer Configuration</label>
+              <input class="custom-input" type="number" placeholder="0"/>
+            </div>
+            <div class="custom-input-width grid">
+              <label>Main Isolator Type, Size & pole</label>
+              <input class="custom-input" type="number" placeholder="0"/>
+            </div>
+            <div class="custom-input-width grid">
+              <label>Output Cable Type & Size</label>
+              <input class="custom-input" type="number" placeholder="0"/>
+            </div>
+          </div>
+        <!-- End of UPS Outut Parameter (Setting Parameter Output UPS) -->
+
+        <!-- Battery Configuration -->
+          <h3 style="font-weight: 700;">Battery Configuration</h3>
+          <div class="custom-input-row grid grid-cols-3 gap-2">
+            <div class="flex col-span-2 gap-3">
+              <h3>Battery Type</h3>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="sla-vrla" name="batteryTypeRadio" value="SLA / VRLA">
+                  <label for="sla-vrla">SLA / VRLA</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="nicd" name="batteryTypeRadio" value="NiCd">
+                  <label for="nicd">NiCd</label>
+                </div> 
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="batteryTypeRadioOther" name="batteryTypeRadio" value="Other">
+                  <label for="batteryTypeRadioOther">Other:</label>
+                  <input class="border-b-1 px-1 w-1/2" type="text"/>
+                </div>
+              </div>
+            </div>
+            <div class="custom-input-width grid col-span-1">
+              <label>Installation Data</label>
+              <input class="custom-input h-9" type="date"/>
+            </div>
+          </div>
+          <div class="custom-input-row grid grid-cols-3 gap-2">
+            <div class="custom-input-width grid">
+              <label>Brand</label>
+              <input class="custom-input" type="text" placeholder="brand"/>
+            </div>
+            <div class="custom-input-width grid">
+              <label>Model</label>
+              <input class="custom-input" type="text" placeholder="model"/>
+            </div>
+            <div class="custom-input-width grid">
+              <label>Capacity</label>
+              <input class="custom-input" type="number" placeholder="0"/>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-2">
+            <h3>Battery Configuration</h3>
+            <div class="grid grid-flow-col col-start-2">
+              <div class="flex gap-2 px-[12px] items-center border-none">
+                <input type="radio" id="sla-vrla" name="batteryConfigurationRadio" value="Common">
+                <label for="sla-vrla">Common</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center border-none">
+                <input type="radio" id="nicd" name="batteryConfigurationRadio" value="Seperate">
+                <label for="nicd">Seperate</label>
+              </div> 
+            </div>
+          </div>
+          <div class="custom-input-row grid grid-cols-3 gap-2">
+            <div class="custom-input-width grid">
+              <label>String</label>
+              <input class="custom-input" type="number" placeholder="0"/>
+            </div>
+            <div class="custom-input-width grid">
+              <label>Block</label>
+              <input class="custom-input" type="number" placeholder="0"/>
+            </div>
+            <div class="custom-input-width grid">
+              <label>Cell</label>
+              <input class="custom-input" type="number" placeholder="0"/>
+            </div>
+          </div>
+          <div class="custom-input-width grid grid-cols-3 gap-2">
+            <label>Battery Backup at Actual Load:</label>
+            <div class="flex flex-row gap-2">
+              <input class="table-custom-input h-[20px] border-b-1 w-1/2 text-center" type="number" placeholder="0"/>
+              <label>Minutes</label>
+            </div>
+          </div>
+        <!-- End of Battery Configuration -->
+
+        <!-- Visual and Mechanical Check (Pemeriksaan Visual dan Mekanis) -->
+          <h3 style="font-weight: 700;">Visual and Mechanical Check <i>(Pemeriksaan Visual dan Mekanis)</i></h3>
+          <div class="grid gap-2">
+            <h3>UPS Damage Check:</h3>
+            <div class="grid grid-cols-2 gap-2 pl-[12px]">
+              <h3>Visual UPS Body Check (Door, Back, Top, Side Cover):</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="bodyCheckPass" name="bodyCheckRadio" value="Pass">
+                  <label for="bodyCheckPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="bodyCheckFailed" name="bodyCheckRadio" value="Failed">
+                  <label for="bodyCheckFailed">Failed</label>
+                </div>  
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 pl-[12px]">
+              <h3>Internal UPS Check (PCB, IGBT, Fans, Display & Other):</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="upsCheckPass" name="upsCheckRadio" value="Pass">
+                  <label for="upsCheckPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="upsCheckFailed" name="upsCheckRadio" value="Failed">
+                  <label for="upsCheckFailed">Failed</label> 
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="grid gap-2">
+            <h3>UPS Positioning Check:</h3>
+            <div class="flex">
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="positioningCheckCorrect" name="positioningCheckRadio" value="Correct">
+                <label for="positioningCheckCorrect">Correct</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="positioningCheckNotCorrect" name="positioningCheckRadio" value="Not Correct">
+                <label for="positioningCheckNotCorrect">Not Correct, refer to UPS Manual Book</label>
+              </div>  
+            </div>
+            <div class="grid gap-2">
+              <h3>Layout:</h3>
+              <div class="ml-[12px] relative border-1 p-3">
+                <label for="layout" class="absolute top-0 right-0 border-1">Upload</label>
+                <div class="flex justify-center items-center">
+                  <img id="layout-preview" class="mb-3 col-sm-2" />
+                </div>
+                <input type="file" name="layout" id="layout" onchange="previewImage()" style="display: none;">
+              </div>
+            </div>
+          </div>
+          <div class="grid gap-2">
+            <h3>UPS Parallel Communication Check:</h3>
+            <div class="flex">
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="communicationCheckCorrect" name="communicationCheckRadio" value="Correct">
+                <label for="communicationCheckCorrect">Correct</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="communicationCheckNotCorrect" name="communicationCheckRadio" value="Not Correct">
+                <label for="communicationCheckNotCorrect">Not Correct</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="communicationCheckNotInstall" name="communicationCheckRadio" value="Not Install">
+                <label for="communicationCheckNotInstall">Not Install</label>
+              </div>  
+            </div>
+          </div>
+          <div class="grid gap-2">
+            <h3>Multi Drop Installation Check:</h3>
+            <div class="flex">
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="installationCheckCorrect" name="installationCheckRadio" value="Correct">
+                <label for="installationCheckCorrect">Correct</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="installationCheckNotCorrect" name="installationCheckRadio" value="Not Correct">
+                <label for="installationCheckNotCorrect">Not Correct</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="installationCheckNotInstall" name="installationCheckRadio" value="Not Install">
+                <label for="installationCheckNotInstall">Not Install</label>
+              </div>  
+            </div>
+          </div>
+          <div class="grid gap-2">
+            <h3>Customer Interface Option:</h3>
+            <div class="flex">
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="interfaceOptionSNMP" name="interfaceOptionRadio" value="SNMP">
+                <label for="interfaceOptionSNMP">SNMP</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="interfaceOptionEPO" name="interfaceOptionRadio" value="EPO">
+                <label for="interfaceOptionEPO">EPO</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="interfaceOptionRSP" name="interfaceOptionRadio" value="RSP">
+                <label for="interfaceOptionRSP">RSP</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="interfaceOptionOther" name="interfaceOptionRadio" value="Other">
+                <input type="text" id="interfaceOptionInputOther" name="interfaceOptionInputOther" placeholder="other" class="table-custom-input border-b-1 h-[20px]">
+              </div>  
+            </div>
+          </div>
+          <div class="grid gap-2">
+            <h3>Status:</h3>
+            <div class="flex">
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="visualCheckStatusOk" name="visualCheckStatusRadio" value="OK">
+                <label for="visualCheckStatusOk">OK</label>
+              </div>  
+              <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                <input type="radio" id="visualCheckStatusNotOk" name="visualCheckStatusRadio" value="Not Ok">
+                <label for="visualCheckStatusNotOk">Not Ok</label>
+              </div>   
+            </div>
+          </div>
+        <!-- End of Visual and Mechanical Check (Pemeriksaan Visual dan Mekanis) -->
+      </div>
+    </div>
+  <!-- End of Third Section (Page 2) -->
+      
+<!-- end of single phase form content page 2 -->
+
+<script>
+  // Delete the selected row (battery - string)
+  function removeRow(element) {
+    const row = element.parentElement.parentElement;
+    row.remove();
+  }
+
+  // image preview
+  function previewImage() {
+    const image = document.querySelector('#layout');
+    const imgPreview = document.querySelector('#layout-preview');
+      
+    imgPreview.style.display = 'block';
+
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(image.files[0]);
+
+    oFReader.onload = function(oFREvent) {
+      imgPreview.src = oFREvent.target.result;
+    }
+  }
+</script>
