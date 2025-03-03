@@ -1,0 +1,448 @@
+<!-- single phase form content page 3 -->
+
+  <!-- First Section - Form Title -->
+  <div class="section pt-[40px] pb-[20px] border-b-1 border-blue-500">
+    <h1>TESTING & COMMISIONING REPORT <i>(UPS PROJECT & CHECKLIST FORM)</i></h1>
+  </div>
+
+  <!-- Third Section (Page 3) -->
+    <div class="section pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+      <div id="project-checklist-form-section" class="grid grid-row gap-4">
+        <!-- UPS Start Up Check List (Pemeriksaan Start Up UPS) -->
+          <div class="ups-start-up-checklist-section grid gap-2">
+            <h3 style="font-weight: 700;">UPS Start Up Check List <i>(Pemeriksaan Start Up UPS)</i></h3>
+            <!-- UPS Startup Checklist Section Subsection 1 -->
+            <div class="grid gap-2 ups-startup-checklist-sec-subsec1">
+              <h3>Main Input Panel & Feeder G</h3>
+              <div class="grid grid-flow-row gap-2">
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Voltage:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="mainInputVoltagePass" name="mainInputVoltageRadio" value="Pass">
+                      <label for="mainInputVoltagePass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="mainInputVoltageFail" name="mainInputVoltageRadio" value="Fail">
+                      <label for="mainInputVoltageFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Phase Rotation:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="mainInputRotationPass" name="mainInputRotationRadio" value="Pass">
+                      <label for="mainInputRotationPass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="mainInputRotationFail" name="mainInputRotationRadio" value="Fail">
+                      <label for="mainInputRotationFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Cable & Termination:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="mainInputTerminationPass" name="mainInputTerminationRadio" value="Pass">
+                      <label for="mainInputTerminationPass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="mainInputTerminationFail" name="mainInputTerminationRadio" value="Fail">
+                      <label for="mainInputTerminationFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <h3>UPS Input Panel</h3>
+              <div class="grid grid-flow-row gap-2">
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Voltage:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="inputPanelVoltagePass" name="inputPanelVoltageRadio" value="Pass">
+                      <label for="inputPanelVoltagePass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="inputPanelVoltageFail" name="inputPanelVoltageRadio" value="Fail">
+                      <label for="inputPanelVoltageFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Phase Rotation:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="inputPanelRotationPass" name="inputPanelRotationRadio" value="Pass">
+                      <label for="inputPanelRotationPass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="inputPanelRotationFail" name="inputPanelRotationRadio" value="Fail">
+                      <label for="inputPanelRotationFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Cable & Termination:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="inputPanelTerminationPass" name="inputPanelTerminationRadio" value="Pass">
+                      <label for="inputPanelTerminationPass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="inputPanelTerminationFail" name="inputPanelTerminationRadio" value="Fail">
+                      <label for="inputPanelTerminationFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <h3>UPS Output Panel</h3>
+              <div class="grid grid-flow-row gap-2">
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Voltage:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="outputPanelVoltagePass" name="outputPanelVoltageRadio" value="Pass">
+                      <label for="outputPanelVoltagePass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="outputPanelVoltageFail" name="outputPanelVoltageRadio" value="Fail">
+                      <label for="outputPanelVoltageFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Phase Rotation:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="outputPanelRotationPass" name="outputPanelRotationRadio" value="Pass">
+                      <label for="outputPanelRotationPass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="outputPanelRotationFail" name="outputPanelRotationRadio" value="Fail">
+                      <label for="outputPanelRotationFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Cable & Termination:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="outputPanelTerminationPass" name="outputPanelTerminationRadio" value="Pass">
+                      <label for="outputPanelTerminationPass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="outputPanelTerminationFail" name="outputPanelTerminationRadio" value="Fail">
+                      <label for="outputPanelTerminationFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <h3>UPS Distribution Panel</h3>
+              <div class="grid grid-flow-row gap-2">
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Voltage:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="distributionPanelVoltagePass" name="distributionPanelVoltageRadio" value="Pass">
+                      <label for="distributionPanelVoltagePass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="distributionPanelVoltageFail" name="distributionPanelVoltageRadio" value="Fail">
+                      <label for="distributionPanelVoltageFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Phase Rotation:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="distributionPanelRotationPass" name="distributionPanelRotationRadio" value="Pass">
+                      <label for="distributionPanelRotationPass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="distributionPanelRotationFail" name="distributionPanelRotationRadio" value="Fail">
+                      <label for="distributionPanelRotationFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Cable & Termination:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="distributionPanelTerminationPass" name="distributionPanelTerminationRadio" value="Pass">
+                      <label for="distributionPanelTerminationPass">Pass</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="distributionPanelTerminationFail" name="distributionPanelTerminationRadio" value="Fail">
+                      <label for="distributionPanelTerminationFail">Fail</label>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPS Startup Checklist Section Subsection 2 -->
+            <div class="grid grid-cols-2 gap-2">
+              <h3>Isolator Switch / Output Switch Check</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="isolatorSwitchPass" name="isolatorSwitchRadio" value="Pass">
+                  <label for="isolatorSwitchPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="isolatorSwitchFail" name="isolatorSwitchRadio" value="Fail">
+                  <label for="isolatorSwitchFail">Fail</label>
+                </div>  
+              </div>
+              <h3>Ext Manual Bypass on UPS Check</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="externalManualPass" name="externalManualRadio" value="Pass">
+                  <label for="externalManualPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="externalManualFail" name="externalManualRadio" value="Fail">
+                  <label for="externalManualFail">Fail</label>
+                </div>  
+              </div>
+              <h3>Int Manual Bypass on UPS Check</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="internalManualPass" name="internalManualRadio" value="Pass">
+                  <label for="internalManualPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="internalManualFail" name="internalManualRadio" value="Fail">
+                  <label for="internalManualFail">Fail</label>
+                </div>  
+              </div>
+            </div>  
+
+            <!-- UPS Startup Checklist Section Subsection 3 -->
+            <div class="grid grid-cols-9 measurement-result">
+              <h3 class="col-span-9">Input Power ON</h3>
+              <div class="grid row-span-2 content-center">Voltage</div>
+              <div>L1-N</div>
+              <div>L2-N</div>
+              <div>L3-N</div>
+              <div>PE</div>
+              <div>L1-L2</div>
+              <div>L2-L3</div>
+              <div>L3-L1</div>
+              <div class="grid row-span-2 grid-rows-2">
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="inputPowerVoltagePass" name="inputPowerVoltageRadio" value="Pass">
+                  <label for="inputPowerVoltagePass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="inputPowerVoltageFail" name="inputPowerVoltageRadio" value="Fail">
+                  <label for="inputPowerVoltageFail">Fail</label>
+                </div>  
+              </div>
+              <input type="number" id="inputPowerVoltage1" name="inputPowerVoltage1" placeholder="0">
+              <input type="number" id="inputPowerVoltage2" name="inputPowerVoltage2" placeholder="0">
+              <input type="number" id="inputPowerVoltage3" name="inputPowerVoltage3" placeholder="0">
+              <input type="number" id="inputPowerVoltage4" name="inputPowerVoltage4" placeholder="0">
+              <input type="number" id="inputPowerVoltage5" name="inputPowerVoltage5" placeholder="0">
+              <input type="number" id="inputPowerVoltage6" name="inputPowerVoltage6" placeholder="0">
+              <input type="number" id="inputPowerVoltage7" name="inputPowerVoltage7" placeholder="0">
+            </div>  
+            <div class="grid grid-cols-9 measurement-result">
+              <h3 class="col-span-9">Output Isolator ON & Parallel Test</h3>
+              <div class="grid row-span-2 content-center">Voltage</div>
+              <div>L1-N</div>
+              <div>L2-N</div>
+              <div>L3-N</div>
+              <div>PE</div>
+              <div>L1-L2</div>
+              <div>L2-L3</div>
+              <div>L3-L1</div>
+              <div class="grid row-span-2 grid-rows-2">
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="outputIsolatorVoltagePass" name="outputIsolatorVoltageRadio" value="Pass">
+                  <label for="outputIsolatorVoltagePass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="outputIsolatorVoltageFail" name="outputIsolatorVoltageRadio" value="Fail">
+                  <label for="outputIsolatorVoltageFail">Fail</label>
+                </div>  
+              </div>
+              <input type="number" id="outputIsolatorVoltage1" name="outputIsolatorVoltage1" placeholder="0">
+              <input type="number" id="outputIsolatorVoltage2" name="outputIsolatorVoltage2" placeholder="0">
+              <input type="number" id="outputIsolatorVoltage3" name="outputIsolatorVoltage3" placeholder="0">
+              <input type="number" id="outputIsolatorVoltage4" name="outputIsolatorVoltage4" placeholder="0">
+              <input type="number" id="outputIsolatorVoltage5" name="outputIsolatorVoltage5" placeholder="0">
+              <input type="number" id="outputIsolatorVoltage6" name="outputIsolatorVoltage6" placeholder="0">
+              <input type="number" id="outputIsolatorVoltage7" name="outputIsolatorVoltage7" placeholder="0">
+            </div>  
+
+            <!-- UPS Startup Checklist Section Subsection 4 -->
+            <div id="battery-polarity-check-table" class="grid grid-cols-4 measurement-result pb-7 relative">
+              <h3 class="col-span-4">Battery Polarity Check</h3>
+              <div class="grid row-span-2 content-center">String No.</div>
+              <div class="col-span-2">VOLT</div>
+              <div class="grid row-span-2 content-center">Action</div>
+              <div>+</div>
+              <div>-</div>
+              <!-- first row -->
+              <div class="grid col-span-4 grid-cols-4 border-none">
+                <input type="number" class="table-custom-input" id="stringNumber1" name="stringNumber1" placeholder="0">
+                <input type="number" class="table-custom-input" id="positiveVoltage2" name="positiveVoltage2" placeholder="0">
+                <input type="number" class="table-custom-input" id="negativeVoltage3" name="negativeVoltage3" placeholder="0">
+                <div class="flex justify-around px-2 items-center">
+                  <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                </div>
+              </div>
+              <!-- add button -->
+              <button id="add-new-battery-polarity-check" class="absolute bottom-0 left-3 bg-[#22bb33] px-2 pb-1 h-7 text-[#ffffff] rounded-b-lg">
+                Add Data +
+              </button>
+              <div class="absolute bottom-0 right-0 grid grid-cols-2 py-1 rounded-b-lg">
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="outputIsolatorVoltagePass" name="outputIsolatorVoltageRadio" value="Pass">
+                  <label for="outputIsolatorVoltagePass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center border-none">
+                  <input type="radio" id="outputIsolatorVoltageFail" name="outputIsolatorVoltageRadio" value="Fail">
+                  <label for="outputIsolatorVoltageFail">Fail</label>
+                </div>  
+              </div>
+            </div>  
+
+            <!-- UPS Startup Checklist Section Subsection 5 -->
+            <div class="grid grid-cols-2 gap-2">
+              <h3>Static Bypass Text</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="staticBypassPass" name="staticBypassRadio" value="Pass">
+                  <label for="staticBypassPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="staticBypassFail" name="staticBypassRadio" value="Fail">
+                  <label for="staticBypassFail">Fail</label>
+                </div>  
+              </div>
+              <h3>Manual Bypass Test</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="manualBypassPass" name="manualBypassRadio" value="Pass">
+                  <label for="manualBypassPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="manualBypassFail" name="manualBypassRadio" value="Fail">
+                  <label for="manualBypassFail">Fail</label>
+                </div>  
+              </div>
+              <h3>Distribution Panel ON & Distribution Energized</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="energizedDistributionPass" name="energizedDistributionRadio" value="Pass">
+                  <label for="energizedDistributionPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="energizedDistributionFail" name="energizedDistributionRadio" value="Fail">
+                  <label for="energizedDistributionFail">Fail</label>
+                </div>  
+              </div>
+              <h3>Bypass to Inverter Test</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="inverterTestPass" name="inverterTestRadio" value="Pass">
+                  <label for="inverterTestPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="inverterTestFail" name="inverterTestRadio" value="Fail">
+                  <label for="inverterTestFail">Fail</label>
+                </div>  
+              </div>
+            </div>  
+            
+            <!-- UPS Startup Checklist Section Subsection 6 -->
+            <div class="grid">
+              <div class="custom-input-width">
+                <h3>Comment</h3>
+                <textarea class="custom-input" rows="4" placeholder="comment..."></textarea>
+              </div>
+            </div>
+          </div>
+        <!-- End of UPS Start Up Check List (Pemeriksaan Start Up UPS) -->
+
+        <!-- UPS Measurement & UPS Function Test (Pengukuran Parameter & Test Fungsi UPS) -->
+          <div class="ups-start-up-checklist-section grid gap-2">
+            <h3 style="font-weight: 700;">UPS Measurement & UPS Function Test <i>(Pengukuran Parameter & Test Fungsi UPS)</i></h3>
+            <div class="grid grid-cols-2 gap-2">
+              <h3>Type of Load</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="loadTypeDummy" name="loadTypeRadio" value="Dummy Load">
+                  <label for="loadTypeDummy">Dummy Load</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="loadTypeReal" name="loadTypeRadio" value="Real Load">
+                  <label for="loadTypeReal">Real Load</label>
+                </div>  
+              </div>
+            </div>
+
+            <div class="grid grid-cols-7 measurement-result">
+              <h3 class="col-span-7">UPS Input Voltage</h3>
+              <div>L1-N</div>
+              <div>L2-N</div>
+              <div>L3-N</div>
+              <div>PE</div>
+              <div>L1-L2</div>
+              <div>L2-L3</div>
+              <div>L3-L1</div>
+              <input type="number" id="inputPowerVoltage1" name="inputPowerVoltage1" placeholder="0">
+              <input type="number" id="inputPowerVoltage2" name="inputPowerVoltage2" placeholder="0">
+              <input type="number" id="inputPowerVoltage3" name="inputPowerVoltage3" placeholder="0">
+              <input type="number" id="inputPowerVoltage4" name="inputPowerVoltage4" placeholder="0">
+              <input type="number" id="inputPowerVoltage5" name="inputPowerVoltage5" placeholder="0">
+              <input type="number" id="inputPowerVoltage6" name="inputPowerVoltage6" placeholder="0">
+              <input type="number" id="inputPowerVoltage7" name="inputPowerVoltage7" placeholder="0">
+            </div>  
+          </div>  
+        <!-- End of UPS Measurement & UPS Function Test (Pengukuran Parameter & Test Fungsi UPS) -->
+      </div>
+
+        
+
+      </div>
+    </div>
+  <!-- End of Third Section (Page 3) -->
+      
+<!-- end of single phase form content page 3 -->
+
+<script>
+  // Delete the selected row (battery priority check)
+  function removeRow(element) {
+    const row = element.parentElement.parentElement;
+    row.remove();
+  }
+</script>
