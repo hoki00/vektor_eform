@@ -1,0 +1,235 @@
+<!-- single phase form content page 4 -->
+
+  <!-- First Section - Form Title -->
+  <div class="section pt-[40px] pb-[20px] border-b-1 border-blue-500">
+    <h1>TESTING & COMMISIONING REPORT <i>(UPS PROJECT & CHECKLIST FORM)</i></h1>
+  </div>
+
+  <!-- Third Section (Page 4) -->
+    <div class="section pt-4 pb-6 pb-[20px] border-b-1 border-blue-500">
+      <div id="project-checklist-form-section" class="grid grid-row gap-4">
+        <!-- UPS Function Test (Test Fungsi UPS) -->
+          <div class="ups-start-up-checklist-section grid gap-2">
+            <h3 style="font-weight: 700;">UPS Function Test <i>(Test Fungsi UPS)</i></h3>
+            <!-- UPS Transfer Inverter -> Bypass -> Inverter -->
+            <div class="grid gap-2">
+              <h3>UPS Transfer Inverter -> Bypass -> Inverter</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="inverterTest" name="inverterRadio" value="Test">
+                  <label for="inverterTest">Test</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="inverterNotTest" name="inverterRadio" value="Not Test">
+                  <label for="inverterNotTest">Not Test</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="inverterPass" name="inverterRadio" value="Pass">
+                  <label for="inverterPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="inverterFail" name="inverterRadio" value="Fail">
+                  <label for="inverterFail">Fail</label>
+                </div>  
+              </div>
+            </div>
+            <!-- Manual Bypass Transfer & Retransfer -->
+            <div class="grid gap-2">
+              <h3>Manual Bypass Transfer & Retransfer</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="retransferTest" name="retransferRadio" value="Test">
+                  <label for="retransferTest">Test</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="retransferNotTest" name="retransferRadio" value="Not Test">
+                  <label for="retransferNotTest">Not Test</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="retransferPass" name="retransferRadio" value="Pass">
+                  <label for="retransferPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="retransferFail" name="retransferRadio" value="Fail">
+                  <label for="retransferFail">Fail</label>
+                </div>  
+              </div>
+            </div>
+            <!-- Battery Backup Test -->
+            <div class="grid gap-2">
+              <h3>Battery Backup Test</h3>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="retransferTest" name="bateryBackupTestRadio" value="Manual Test">
+                  <label for="retransferTest">Manual Test by Input / Rectifier Switch Off</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="deepBatteryTest" name="bateryBackupTestRadio" value="Deep Battery Test">
+                  <label for="deepBatteryTest">Deep battery Test</label>
+                  <input class="h-[20px] w-1/8 border-b-1 text-center" type="number" id="deepBatteryTest" name="deepBatteryTest" placeholder="0">
+                  <label for="deepBatteryTest">min</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="batteryTest" name="bateryBackupTestRadio" value="Battery Test">
+                  <label for="batteryTest">Perform Battery Test</label>
+                </div>  
+                <div class="flex">
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="batteryBackupTest" name="batteryBackupRadio" value="Test">
+                    <label for="batteryBackupTest">Test</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="batteryBackupNotTest" name="batteryBackupRadio" value="Not Test">
+                    <label for="batteryBackupNotTest">Not Test</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="batteryBackupPass" name="batteryBackupRadio" value="Pass">
+                    <label for="batteryBackupPass">Pass</label>
+                  </div>  
+                  <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                    <input type="radio" id="batteryBackupFail" name="batteryBackupRadio" value="Fail">
+                    <label for="batteryBackupFail">Fail</label>
+                  </div>  
+                </div>
+              </div>  
+            </div>
+            <!-- UPS Function Test Battery Table -->
+            <div id="ups-function-test-battery-table" class="grid grid-cols-5 measurement-result pb-7 relative">
+              <h3 class="col-span-5">Battery</h3>
+              <div>String</div>
+              <div class="col-span-2">Voltage (VDC)</div>
+              <div>Current (ADC)</div>
+              <div>Action</div>
+              <!-- first row -->
+              <div class="grid col-span-5 grid-cols-5 border-none">
+                <input type="number" class="table-custom-input" id="string1" name="string1" placeholder="0">
+                <input type="number" class="table-custom-input" id="voltage1Input1" name="voltage1Input1" placeholder="0">
+                <input type="number" class="table-custom-input" id="voltage2Input1" name="voltage2Input1" placeholder="0">
+                <input type="number" class="table-custom-input" id="current1" name="current1" placeholder="0">
+                <div class="flex justify-around px-2 items-center">
+                  <img src="/static/images/Delete.png" alt="delete" class="h-[20px]" onclick="removeRow(this)">
+                </div>
+              </div>
+              <!-- add button -->
+              <button id="add-new-ups-function-test-battery" class="absolute bottom-0 left-3 bg-[#22bb33] px-2 pb-1 h-7 text-[#ffffff] rounded-b-lg">
+                Add Data +
+              </button>
+            </div>
+            <!-- Main Power Fail Simulation & ATS Genset Function Test -->
+            <div class="grid gap-2">
+              <h3>Main Power Fail Simulation & ATS Genset Function Test</h3>
+              <div class="flex">
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="failSimulationTest" name="failSimulationRadio" value="Test">
+                  <label for="failSimulationTest">Test</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="failSimulationNotTest" name="failSimulationRadio" value="Not Test">
+                  <label for="failSimulationNotTest">Not Test</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="failSimulationPass" name="failSimulationRadio" value="Pass">
+                  <label for="failSimulationPass">Pass</label>
+                </div>  
+                <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                  <input type="radio" id="failSimulationFail" name="failSimulationRadio" value="Fail">
+                  <label for="failSimulationFail">Fail</label>
+                </div>  
+              </div>
+            </div>
+            <!-- Comment Section -->
+            <div class="grid">
+              <div class="custom-input-width">
+                <h3>Comment</h3>
+                <textarea class="custom-input" rows="4" placeholder="comment..."></textarea>
+              </div>
+            </div>
+          </div>  
+        <!-- End of UPS Function Test (Test Fungsi UPS) -->
+
+        <!-- Firmware Version (Versi Firmware) -->
+          <div class="ups-start-up-checklist-section grid gap-2">
+            <h3 style="font-weight: 700;">Firmware Version <i>(Versi Firmware)</i></h3>
+            <div class="grid gap-2">
+              <!-- Current FW version -->
+              <div class="grid grid-cols-5">
+                <h3>Current FW version : </h3>
+                <input class="h-[20px] w-1/8 border-b-1 text-center col-span-4" type="number" id="currentVersion" name="currentVersion" placeholder="0">
+              </div>
+              <!-- New FW version -->
+              <div class="grid grid-cols-5">
+                <h3>New FW version : </h3>
+                <input class="h-[20px] w-1/8 border-b-1 text-center col-span-4" type="number" id="newVersion" name="newVersion" placeholder="0">
+              </div>
+              <!-- Comment Section -->
+              <div class="grid">
+                <div class="custom-input-width">
+                  <h3>Comment</h3>
+                  <textarea class="custom-input" rows="4" placeholder="comment..."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>  
+        <!-- End of Firmware Version (Versi Firmware) -->
+
+        <!-- Result & Conclusions Section -->
+          <div class="ups-start-up-checklist-section grid gap-2">
+            <h3 style="font-weight: 700;">Result & Conclusions <i>(Hasil & Kesimpulan)</i></h3>
+            <div class="custom-input-width">
+              <textarea class="custom-input" rows="4" placeholder="result & conslusions..."></textarea>
+            </div>
+          </div>  
+        <!-- End of Result & Conclusions Section -->
+      </div>
+    </div>
+  <!-- End of Third Section (Page 4) -->
+
+  <!-- Signature Section -->
+  <div class="section pt-4 pb-6 border-b-1 border-blue-500">
+    <div id="signature-section" class="border-none grid grid-cols-12">
+      <!-- Engineer Signature Panel -->
+      <div id="engineer-signature-column" class="col-span-3">
+        <h3 class="custom-border col-span-3 flex items-center pl-3 gap-1">Engineer:</h3>
+        <div class="grid grid-cols-3">
+          <!-- First Signature Pad -->
+          <div class="relative col-span-3">
+            <canvas id="engineer-signature-pad" class="custom-border w-full"></canvas>
+            <img src="/static/images/clear.png" alt="clear" id="clear-engineer-signature" class="absolute w-6 h-6 right-1 top-1">
+          </div>
+        </div>
+        <div class="grid grid-cols-3">
+          <input type="text" placeholder="engineer name" class="custom-border table-custom-input col-span-3">
+        </div>
+      </div>
+      <!-- Customer Signature Panel -->
+      <div id="customer-signature-column" class="col-span-6 col-start-7">
+        <h3 class="custom-border col-span-6 flex items-center pl-3 gap-1">Customer:</h3>
+        <div class="grid grid-cols-6">
+          <!-- First Signature Pad -->
+          <div class="relative col-span-3">
+            <canvas id="customer-signature-pad-1" class="custom-border w-full"></canvas>
+            <img src="/static/images/clear.png" alt="clear" id="clear-customer-signature-1" class="absolute w-6 h-6 right-1 top-1">
+          </div>
+          <!-- Second Signature Pad -->
+          <div class="relative col-span-3">
+            <canvas id="customer-signature-pad-2" class="custom-border w-full"></canvas>
+            <img src="/static/images/clear.png" alt="clear" id="clear-customer-signature-2" class="absolute w-6 h-6 right-1 top-1">
+          </div>
+        </div>
+        <div class="grid grid-cols-6">
+          <input type="text" placeholder="customer name" class="custom-border table-custom-input col-span-3">
+          <input type="text" placeholder="customer name" class="custom-border table-custom-input col-span-3">
+        </div>
+      </div>
+    </div>
+  </div>
+      
+<!-- end of single phase form content page 4 -->
+
+<script>
+  // Delete the selected row (battery priority check)
+  function removeRow(element) {
+    const row = element.parentElement.parentElement;
+    row.remove();
+  }
+</script>

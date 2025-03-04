@@ -395,7 +395,8 @@
 
         <!-- UPS Measurement & UPS Function Test (Pengukuran Parameter & Test Fungsi UPS) -->
           <div class="ups-start-up-checklist-section grid gap-2">
-            <h3 style="font-weight: 700;">UPS Measurement & UPS Function Test <i>(Pengukuran Parameter & Test Fungsi UPS)</i></h3>
+            <h3 style="font-weight: 700;">Measurement & UPS Function Test <i>(Pengukuran Parameter & Test Fungsi UPS)</i></h3>
+            <!-- Type of Load -->
             <div class="grid grid-cols-2 gap-2">
               <h3>Type of Load</h3>
               <div class="flex">
@@ -409,7 +410,7 @@
                 </div>  
               </div>
             </div>
-
+            <!-- UPS Input Voltage -->
             <div class="grid grid-cols-7 measurement-result">
               <h3 class="col-span-7">UPS Input Voltage</h3>
               <div>L1-N</div>
@@ -419,20 +420,205 @@
               <div>L1-L2</div>
               <div>L2-L3</div>
               <div>L3-L1</div>
-              <input type="number" id="inputPowerVoltage1" name="inputPowerVoltage1" placeholder="0">
-              <input type="number" id="inputPowerVoltage2" name="inputPowerVoltage2" placeholder="0">
-              <input type="number" id="inputPowerVoltage3" name="inputPowerVoltage3" placeholder="0">
-              <input type="number" id="inputPowerVoltage4" name="inputPowerVoltage4" placeholder="0">
-              <input type="number" id="inputPowerVoltage5" name="inputPowerVoltage5" placeholder="0">
-              <input type="number" id="inputPowerVoltage6" name="inputPowerVoltage6" placeholder="0">
-              <input type="number" id="inputPowerVoltage7" name="inputPowerVoltage7" placeholder="0">
-            </div>  
+              <input type="number" id="upsInputVoltage1" name="upsInputVoltage1" placeholder="0">
+              <input type="number" id="upsInputVoltage2" name="upsInputVoltage2" placeholder="0">
+              <input type="number" id="upsInputVoltage3" name="upsInputVoltage3" placeholder="0">
+              <input type="number" id="upsInputVoltage4" name="upsInputVoltage4" placeholder="0">
+              <input type="number" id="upsInputVoltage5" name="upsInputVoltage5" placeholder="0">
+              <input type="number" id="upsInputVoltage6" name="upsInputVoltage6" placeholder="0">
+              <input type="number" id="upsInputVoltage7" name="upsInputVoltage7" placeholder="0">
+            </div>
+            <!-- UPS Input Current -->
+            <div class="grid grid-cols-7 measurement-result">
+              <h3 class="col-span-7">UPS Input Current</h3>
+              <div>L1</div>
+              <div>L2</div>
+              <div>L3</div>
+              <div>N</div>
+              <input class="col-start-1" type="number" id="upsInputCurrent1" name="upsInputCurrent1" placeholder="0">
+              <input type="number" id="upsInputCurrent2" name="upsInputCurrent2" placeholder="0">
+              <input type="number" id="upsInputCurrent3" name="upsInputCurrent3" placeholder="0">
+              <input type="number" id="upsInputCurrent4" name="upsInputCurrent4" placeholder="0">
+            </div>
+            <!-- Bypass Input Voltage -->
+            <div class="grid grid-cols-7 measurement-result">
+              <h3 class="col-span-7">Bypass Input Voltage</h3>
+              <div>L1-N</div>
+              <div>L2-N</div>
+              <div>L3-N</div>
+              <div>PE</div>
+              <div>L1-L2</div>
+              <div>L2-L3</div>
+              <div>L3-L1</div>
+              <input type="number" id="bypassInputVoltage1" name="bypassInputVoltage1" placeholder="0">
+              <input type="number" id="bypassInputVoltage2" name="bypassInputVoltage2" placeholder="0">
+              <input type="number" id="bypassInputVoltage3" name="bypassInputVoltage3" placeholder="0">
+              <input type="number" id="bypassInputVoltage4" name="bypassInputVoltage4" placeholder="0">
+              <input type="number" id="bypassInputVoltage5" name="bypassInputVoltage5" placeholder="0">
+              <input type="number" id="bypassInputVoltage6" name="bypassInputVoltage6" placeholder="0">
+              <input type="number" id="bypassInputVoltage7" name="bypassInputVoltage7" placeholder="0">
+            </div>
+            <!-- UPS Output Voltage -->
+            <div class="grid grid-cols-7 measurement-result">
+              <h3 class="col-span-7">UPS Output Voltage</h3>
+              <div>L1-N</div>
+              <div>L2-N</div>
+              <div>L3-N</div>
+              <div>PE</div>
+              <div>L1-L2</div>
+              <div>L2-L3</div>
+              <div>L3-L1</div>
+              <input type="number" id="upsOutputVoltage1" name="upsOutputVoltage1" placeholder="0">
+              <input type="number" id="upsOutputVoltage2" name="upsOutputVoltage2" placeholder="0">
+              <input type="number" id="upsOutputVoltage3" name="upsOutputVoltage3" placeholder="0">
+              <input type="number" id="upsOutputVoltage4" name="upsOutputVoltage4" placeholder="0">
+              <input type="number" id="upsOutputVoltage5" name="upsOutputVoltage5" placeholder="0">
+              <input type="number" id="upsOutputVoltage6" name="upsOutputVoltage6" placeholder="0">
+              <input type="number" id="upsOutputVoltage7" name="upsOutputVoltage7" placeholder="0">
+            </div>
+            <!-- UPS Output Current -->
+            <div class="grid grid-cols-7 measurement-result">
+              <h3 class="col-span-7">UPS Output Current</h3>
+              <div>L1</div>
+              <div>L2</div>
+              <div>L3</div>
+              <div>N</div>
+              <input class="col-start-1" type="number" id="upsOutputCurrent1" name="upsOutputCurrent1" placeholder="0">
+              <input type="number" id="upsOutputCurrent2" name="upsOutputCurrent2" placeholder="0">
+              <input type="number" id="upsOutputCurrent3" name="upsOutputCurrent3" placeholder="0">
+              <input type="number" id="upsOutputCurrent4" name="upsOutputCurrent4" placeholder="0">
+            </div>
+
+            <!-- UPS Startup Checklist Section Subsection 1 - Phase Rotation & Sequence -->
+            <div class="grid gap-2 ups-measurement-sec-subsec">
+              <h3>Phase Rotation & Sequence</h3>
+              <div class="grid grid-flow-row gap-2">
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Input:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="phaseRotationInputOk" name="phaseRotationInputRadio" value="Ok">
+                      <label for="phaseRotationInputOk">OK</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="phaseRotationInputNotOk" name="phaseRotationInputRadio" value="NotOk">
+                      <label for="phaseRotationInputNotOk">Not OK</label>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-flow-row gap-2">
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Output:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="phaseRotationOutputOk" name="phaseRotationOutputRadio" value="Ok">
+                      <label for="phaseRotationOutputOk">OK</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="phaseRotationOutputNotOk" name="phaseRotationOutputRadio" value="NotOk">
+                      <label for="phaseRotationOutputNotOk">Not OK</label>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frequency -->
+            <div class="grid grid-cols-8 gap-2">
+              <h3 class="col-span-8">Frequency</h3>
+              <div class="flex flex-row col-span-7 col-start-2">
+                <div class="flex flex-row gap-2 px-3 border-r-0">
+                  <label for="bypassFrequency">Bypass:</label>
+                  <input class="border-b h-[20px] w-1/2 text-center" type="number" id="bypassFrequency" name="bypassFrequency" placeholder="0">
+                  <label for="bypassFrequency">Hz</label>
+                </div>  
+                <div class="flex flex-row gap-2 px-3 border-r-0">
+                  <label for="outputFrequency">Output / Inverter:</label>
+                  <input class="border-b h-[20px] w-1/2 text-center" type="number" id="outputFrequency" name="outputFrequency" placeholder="0">
+                  <label for="outputFrequency">Hz</label>
+                </div>  
+              </div>
+            </div>
+
+            <!-- UPS Startup Checklist Section Subsection 2 - UPS Load -->
+            <div class="grid grid-cols-8 gap-2 ups-measurement-sec-subsec">
+              <h3 class="col-span-8">UPS Load</h3>
+              <div class="flex flex-row col-span-7 col-start-2">
+                <div class="flex flex-row gap-2 px-3 border-r-0">
+                  <label for="upsLoadL1">L1:</label>
+                  <input class="border-b h-[20px] w-1/2 text-center" type="number" id="upsLoadL1" name="upsLoadL1" placeholder="0">
+                </div>  
+                <div class="flex flex-row gap-2 px-3 border-r-0">
+                  <label for="upsLoadL2">L2:</label>
+                  <input class="border-b h-[20px] w-1/2 text-center" type="number" id="upsLoadL2" name="upsLoadL2" placeholder="0">
+                </div>  
+                <div class="flex flex-row gap-2 px-3 border-r-0">
+                  <label for="upsLoadL3">L3:</label>
+                  <input class="border-b h-[20px] w-1/2 text-center" type="number" id="upsLoadL3" name="upsLoadL3" placeholder="0">
+                </div>  
+              </div>
+              <div class="col-span-8">
+                <div class="grid grid-cols-2 gap-2">
+                  <label>
+                    Load Sharing Status:
+                  </label>
+                  <div class="flex">
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="loadSharingOk" name="loadSharingRadio" value="Ok">
+                      <label for="loadSharingOk">OK</label>
+                    </div>  
+                    <div class="flex gap-2 px-[12px] items-center" style="border-right: 0;">
+                      <input type="radio" id="loadSharingNotOk" name="loadSharingRadio" value="NotOk">
+                      <label for="loadSharingNotOk">Not OK</label>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Battery Charger -->
+            <div class="grid grid-cols-6 measurement-result">
+              <h3 class="col-span-6">Battery Charger</h3>
+              <div class="col-span-2 content-center row-span-2">String</div>
+              <div class="col-span-2">Voltage</div>
+              <div class="col-span-2">Current</div>
+              <div>+ to N</div>
+              <div>N to -</div>
+              <div>+</div>
+              <div>-</div>
+              <div class="col-span-2 content-center">String 1</div>
+              <input type="number" id="string1Input1" name="string1Input1" placeholder="0">
+              <input type="number" id="string1Input2" name="string1Input2" placeholder="0">
+              <input type="number" id="string1Input3" name="string1Input3" placeholder="0">
+              <input type="number" id="string1Input4" name="string1Input4" placeholder="0">
+              <div class="col-span-2 content-center">String 2</div>
+              <input type="number" id="string2Input1" name="string2Input1" placeholder="0">
+              <input type="number" id="string2Input2" name="string2Input2" placeholder="0">
+              <input type="number" id="string2Input3" name="string2Input3" placeholder="0">
+              <input type="number" id="string2Input4" name="string2Input4" placeholder="0">
+              <div class="col-span-2 content-center">String 3</div>
+              <input type="number" id="string3Input1" name="string3Input1" placeholder="0">
+              <input type="number" id="string3Input2" name="string3Input2" placeholder="0">
+              <input type="number" id="string3Input3" name="string3Input3" placeholder="0">
+              <input type="number" id="string3Input4" name="string3Input4" placeholder="0">
+              <div class="col-span-2 content-center">String 4</div>
+              <input type="number" id="string4Input1" name="string4Input1" placeholder="0">
+              <input type="number" id="string4Input2" name="string4Input2" placeholder="0">
+              <input type="number" id="string4Input3" name="string4Input3" placeholder="0">
+              <input type="number" id="string4Input4" name="string4Input4" placeholder="0">
+              <div class="col-span-2 content-center">String 5</div>
+              <input type="number" id="string5Input1" name="string5Input1" placeholder="0">
+              <input type="number" id="string5Input2" name="string5Input2" placeholder="0">
+              <input type="number" id="string5Input3" name="string5Input3" placeholder="0">
+              <input type="number" id="string5Input4" name="string5Input4" placeholder="0">
+            </div>
           </div>  
         <!-- End of UPS Measurement & UPS Function Test (Pengukuran Parameter & Test Fungsi UPS) -->
-      </div>
-
-        
-
       </div>
     </div>
   <!-- End of Third Section (Page 3) -->
