@@ -15,15 +15,15 @@
     </div>
     <div class="header-menu-item">
       <a href="/installation-survey-form"><h2>Form Survey</h2></a>
-      <div class="{{if eq .URL "installationSurveyForm/installation-survey-form"}}active{{end}}"></div>  
+      <div class="{{if eq .URL "installation-survey-form"}}active{{end}}"></div>  
     </div>
     <div class="header-menu-item">
       <a href="/single-phase-form"><h2>Form Test</h2></a>
-      <div class="{{if eq .URL "singlePhaseForm/single-phase-form"}}active{{end}}"></div>    
+      <div class="{{if eq .URL "single-phase-form"}}active{{end}}"></div>    
     </div>
     <div class="header-menu-item">
       <a href="/project-testing-form"><h2>Checklist Form</h2></a>
-      <div class="{{if eq .URL "projectChecklistForm/project-testing-form"}}active{{end}}"></div>
+      <div class="{{if eq .URL "project-testing-form"}}active{{end}}"></div>
     </div>
     <div class="header-menu-item">
       <a href="#"><h2>Berita Acara</h2></a>
@@ -55,15 +55,15 @@
         </div>
         <div class="header-menu-item">
           <a href="/installation-survey-form"><h2>Form Survey</h2></a>
-          <div class="{{if eq .URL "installationSurveyForm/installation-survey-form"}}active{{end}}"></div>  
+          <div class="{{if eq .URL "installation-survey-form"}}active{{end}}"></div>  
         </div>
         <div class="header-menu-item">
           <a href="/single-phase-form"><h2>Form Test</h2></a>
-          <div class="{{if eq .URL "singlePhaseForm/single-phase-form"}}active{{end}}"></div>   
+          <div class="{{if eq .URL "single-phase-form"}}active{{end}}"></div>   
         </div>
         <div class="header-menu-item">
           <a href="/project-testing-form"><h2>Checklist Form</h2></a>
-          <div class="{{if eq .URL "projectChecklistForm/project-testing-form"}}active{{end}}"></div>
+          <div class="{{if eq .URL "project-testing-form"}}active{{end}}"></div>
         </div>
         <div class="header-menu-item">
           <a href="#"><h2>Berita Acara</h2></a>

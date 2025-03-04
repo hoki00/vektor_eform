@@ -11,5 +11,5 @@ type ProjectChecklistFormController struct {
 func (c *ProjectChecklistFormController) Get() {
 	// projectChecklistForm.html => UPS Project & Checklist Form (Checklist & Commisioning Report)
 	c.Data["URL"] = "/project-testing-form"
-	c.TplName = "projectChecklistForm.html"
+	c.TplName = "projectChecklistForm/projectChecklistForm.html"
 }
