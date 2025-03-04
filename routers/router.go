@@ -7,7 +7,9 @@ import (
 )
 
 func init() {
-    beego.Router("/", &controllers.TechnicalController{})
+    beego.Router("/", &controllers.AuthController{})
+    beego.Router("/login", &controllers.AuthController{}, "get,post:Login")
+    beego.Router("technical-form", &controllers.TechnicalController{})
     beego.Router("assignment-form", &controllers.AssignmentFormController{})
     beego.Router("battery-form", &controllers.BatteryFormController{})
     beego.Router("single-phase-form", &controllers.SinglePhaseFormController{})
