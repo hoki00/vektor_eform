@@ -53,7 +53,11 @@ input[type=radio] {
 }
 
 #single-phase-form-third-section > div,
-#installation-survey-form-third-section > div > div {
+#installation-survey-form-third-section > div > div,
+#project-checklist-form-third-section > div,
+.ups-start-up-checklist-section > div,
+.ups-startup-checklist-sec-subsec1 > div > div > label,
+.ups-measurement-sec-subsec > div > div > label {
   padding-left: 12px;
 }
 
