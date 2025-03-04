@@ -11,5 +11,5 @@ type InstallationSurveyFormController struct {
 func (c *InstallationSurveyFormController) Get() {
 	// installationSurveyForm.html => FSP (Form Survey Pemesangan UPS)
 	c.Data["URL"] = "/installation-survey-form"
-	c.TplName = "installationSurveyForm.html"
+	c.TplName = "installationSurveyForm/installationSurveyForm.html"
 }

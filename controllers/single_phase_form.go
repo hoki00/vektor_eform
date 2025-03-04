@@ -11,5 +11,5 @@ type SinglePhaseFormController struct {
 func (c *SinglePhaseFormController) Get() {
 	// singlePhaseForm.html => single phase ups test & comm (form test & comm ups satu fase)
 	c.Data["URL"] = "/single-phase-form"
-	c.TplName = "singlePhaseForm.html"
+	c.TplName = "singlePhaseForm/singlePhaseForm.html"
 }
