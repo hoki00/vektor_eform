@@ -2,6 +2,16 @@ body {
   overflow-x: hidden;
 }
 
+.form input {
+  border-color: #00ACBA;
+  border-width: 1px;
+}
+
+::placeholder {
+  color: rgba(150, 150, 150, 0.5);
+  opacity: 1;
+}
+
 .header-menu-item {
   display: flex;
   flex-direction: column;
