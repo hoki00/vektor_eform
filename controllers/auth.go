@@ -13,18 +13,15 @@ func (c *AuthController) Get() {
 }
 
 func (c *AuthController) Login() {
-    username := c.GetString("username")
+    email := c.GetString("email")
     password := c.GetString("password")
 
-	if (username == "admin" && password == "admin") {
+	if (email == "admin@gmail.com" && password == "admin") {
 		c.Redirect("/technical-form", 302)
 	} else {
-		c.Data["ErrorMessage"] = "Invalid Username or Password"
+		c.Data["ErrorMessage"] = "Invalid Email or Password"
 		c.TplName = "loginPage.tpl"
 	}
 }
 
-func (c *AuthController) Register() {
-    c.TplName = "registrationPage.html"
-}
 

@@ -2,32 +2,6 @@ body {
   overflow-x: hidden;
 }
 
-.reverse-button {
-  background-color: #ffffff;
-  color: #00ACBA;
-  border-color: #00ACBA;
-  border-width: 1px;
-}
-
-.reverse-button:hover {
-  background-color: #e0e0e0;
-  color: #008a99;
-}
-
-#register-button {
-  background-color: #00ACBA;
-  color: #ffffff;
-}
-
-#register-button:hover:not(:disabled) {
-  background-color: #008a99;
-}
-
-#register-button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
-}
-
 .form input {
   border-color: #00ACBA;
   border-width: 1px;
