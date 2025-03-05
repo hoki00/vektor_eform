@@ -23,3 +23,8 @@ func (c *AuthController) Login() {
 		c.TplName = "loginPage.tpl"
 	}
 }
+
+func (c *AuthController) Register() {
+    c.TplName = "registrationPage.html"
+}
+
